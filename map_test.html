@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Map Marker</title>
+  <style>
+    /* 设置地图容器的样式 */
+    #map {
+      height: 400px; /* 设置地图容器的高度 */
+      width: 100%;   /* 设置地图容器的宽度 */
+    }
+  </style>
+</head>
+<body>
+  <!-- 创建一个容器来显示地图 -->
+  <div id="map"></div>
+
+  <!-- 引入 Google 地图 API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKT7lMvBvJAnBoA59WSI1O9oBeULT33rg&callback=initMap" async defer></script>
+
+  <script>
+    // 初始化地图
+    function initMap() {
+      // 创建一个新的地图对象并将其放置在 id 为 "map" 的 <div> 元素中
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8,
+        mapId:`26f2f3bf86a9616a`,
+      });
+
+      // 在地图上添加自定义标记（Marker）
+      var marker = new google.maps.Marker({
+        position: {lat: -34.397, lng: 150.644}, // 标记的位置（经纬度）
+        map: map, // 将标记添加到指定的地图对象上
+        title: 'Custom Marker' // 标记的标题（鼠标悬停时显示的文字）
+        // 您还可以添加其他自定义标记的选项，例如图标、动画等
+      });
+    }
+  </script>
+</body>
+</html>

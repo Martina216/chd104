@@ -1,0 +1,97 @@
+.header{
+    max-width: 1920px;
+    position: relative;
+    margin: auto;
+    font-family:'Noto Sans TC','sans-serif';
+    letter-spacing: 1px;  
+    background-color: #555;
+}
+.header .header_inner{
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.header .header_inner .header_logo{
+    max-width: 333px;
+    margin-right:auto;
+    /* border: 1px solid black;  */
+    padding: 22px 0px 20px 70px;
+}
+
+.header .header_inner .header_logo img{
+    width: 100%;
+    vertical-align: middle;
+    /* border: 1px solid salmon;  */
+}
+.header .header_inner .header_main_nav{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid rgb(51, 14, 20); */
+}
+.header .header_inner .header_main_nav .header_nav{
+    /* border: 1px solid pink; */
+    display: flex;
+}
+.header .header_inner .header_main_nav .header_nav ul{
+    list-style: none;
+    display: flex;
+    /* border:1px solid white; */
+    gap: 16px;
+    
+}
+.header .header_inner .header_main_nav .header_nav li{
+    margin: auto;
+    padding: 0px 20px 0px 0px;
+}
+.header .header_inner .header_main_nav .header_nav li a{
+    text-decoration: none;
+    color: #4F7937;
+    font-size: 17px;
+    font-weight: 500;
+    /* background-color: #fa0; */
+    position: relative;
+}
+.header .header_inner .header_main_nav .header_nav li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #4F7937;
+    opacity: 0;
+    transition: width .3s ease-in-out; 
+}
+.header .header_inner .header_main_nav .header_nav li a:hover::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+.header .header_inner .header_main_nav .header_nav li a:not(:hover):after {
+    opacity: 0;
+    width: 0;
+}
+.header .header_inner .header_main_nav .book-btn{
+    margin: auto;
+    padding: 0px 60px 0px 0px;
+}
+.header .header_inner .header_main_nav .book-btn a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 28px;
+    background-color: #4F7937; 
+    padding: 14px 16px;
+    margin: auto auto auto 16px;
+    transition: background-color .2s ease, font-weight .1s ease-in;
+}
+.header .header_inner .header_main_nav .book-btn a:hover{
+    background-color: #FDD340;
+    color: #4F7937;
+    font-weight: 600;
+}

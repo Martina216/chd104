@@ -1,0 +1,163 @@
+html, body{
+    scroll-behavior: smooth;
+}
+.faqs-content{
+    max-width: 1200px;
+    margin: auto;
+    font-family:'Noto Sans TC','sans-serif';
+    letter-spacing: .8px;
+    color: #000;
+    line-height: 1.3;
+    padding: 0px 0px 30px;
+}
+.faqs-content .faqs_title{
+    padding: 20px 0px 24px;
+    border-bottom: 1px solid #bbb;
+    height: 100px;
+}
+.faqs-content .faqs_title span{
+    font-size: 26px;
+}
+.faqs-content .faqs_menu{
+    max-width: 600px;
+    margin: 0px auto 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.faqs-content .faqs_menu a{
+    display: flex;
+    width: 125px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #A7C398;
+    color: #000;
+    font-size: 18px;
+}
+.faqs-content .faqs_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.faqs-content .faqs_container .faq_banner{
+    margin: 0px 0px 0px;
+}
+.faqs-content .faqs_container .faq_banner .banner_img{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 420px;
+}
+.faqs-content .faqs_container .faq_banner .banner_img img{
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 30px;
+}
+.faqs-content .faqs_container .faq_area{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 35px;
+}
+.faqs-content .faqs_container .faq_area .box_content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    width: 400px;
+    gap: 10px;
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_category{
+    margin-left:0;
+    padding: 46px 20px 10px;
+    /* border: 1px solid black; */
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_category span{
+    display: flex;
+    font-size: 30px;
+    color: #4F7937;
+    /* border: 1px solid black; */
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_box{
+    background-color: #A7C398;
+    border-radius: 30px;
+    width: 100%;
+    padding:20px 25px 20px;
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_box i{
+    display: flex;
+    margin:auto 0px;
+    font-size: 22px;
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_box:hover i{
+    transition: all .4s ease-in-out;
+    rotate: 135deg;
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_box:not(hover) i{
+    transition: all .6s ease-in-out;
+    rotate: 0deg;
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_box .question{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto 0px;
+    padding: 0px 0px 0px;
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_box .question span{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+#switch1-1, #switch1-2,#switch1-3{
+    display: none;
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_box .answer{
+    width: 100%;
+    padding: 0px 0px 0px;
+    /* display: none; */
+    /* transition: 1s linear; */
+    /* transition-delay: opacity .5s linear; */
+}
+.answer1-1, .answer1-2, .answer1-3{
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition-property:  max-height,  opacity,;
+    transition-duration: .5s, 2s;
+    transition-delay: 0s, .5s;
+}
+#switch1-1:checked + .answer1-1{
+    /* display:block; */
+    max-height: 100vh;
+    padding: 12px 0px 0px;
+    opacity: 1;
+}
+#switch1-2:checked + .answer1-2{
+    max-height: 100vh;
+    padding: 12px 0px 0px;
+    opacity: 1;
+}
+#switch1-3:checked + .answer1-3{
+    max-height: 100vh;
+    padding: 12px 0px 0px;
+    opacity: 1;
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_box .answer span{
+    font-size: 18px;
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_box .answer span a{
+    border-bottom: 1.5px solid #4F7937;
+    color: #4F7937;
+    transition: all .2s ease;
+}
+.faqs-content .faqs_container .faq_area .box_content .faq_box .answer span a:hover{
+    background-color:#F1BB00;
+    /* padding: 2px 0px; */
+    color: #000;
+}

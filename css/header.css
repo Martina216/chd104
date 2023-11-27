@@ -1,0 +1,132 @@
+.header{
+    max-width: 1920px;
+    position: relative;
+    margin: auto;
+    font-family:'Noto Sans TC','sans-serif';
+    letter-spacing: 1px;  
+}
+.header .header_inner{
+    z-index: 1;
+    position: absolute;
+    top:0;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.header .header_inner .header_logo{
+    max-width: 333px;
+    margin-right:auto;
+    /* border: 1px solid black;  */
+    padding: 22px 0px 20px 70px;
+} 
+
+.header .header_inner .header_logo img{
+    width: 100%;
+    vertical-align: middle;
+    /* border: 1px solid salmon;  */
+}
+.header .header_inner .header_main_nav{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid rgb(51, 14, 20); */
+}
+.header .header_inner .header_main_nav .header_nav{
+    /* border: 1px solid pink; */
+    display: flex;
+}
+.header .header_inner .header_main_nav .header_nav ul{
+    list-style: none;
+    display: flex;
+    /* border:1px solid white; */
+    gap: 16px;
+    
+}
+.header .header_inner .header_main_nav .header_nav li{
+    margin: auto;
+    padding: 0px 20px 0px 0px;
+}
+.header .header_inner .header_main_nav .header_nav li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 500;
+    /* background-color: #fa0; */
+    position: relative;
+}
+.header .header_inner .header_main_nav .header_nav li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: width .3s ease-in-out; 
+}
+.header .header_inner .header_main_nav .header_nav li a:hover::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+.header .header_inner .header_main_nav .header_nav li a:not(:hover):after {
+    opacity: 0;
+    width: 0;
+}
+.header .header_inner .header_main_nav .book-btn{
+    margin: auto;
+    padding: 0px 60px 0px 0px;
+}
+.header .header_inner .header_main_nav .book-btn a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 28px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 14px 16px;
+    margin: auto auto auto 16px;
+    transition: background-color .2s ease, font-weight .1s ease-in;
+}
+.header .header_inner .header_main_nav .book-btn a:hover{
+    background-color: #FDD340;
+    color: #35311E;
+    font-weight: 600;
+}
+
+.header .header_banner{
+    position: relative;
+
+}
+.header .header_banner img{
+    width: 100%;
+    vertical-align: middle;
+    margin: 0 auto;
+    border-radius: 0 0 40px 40px;
+}
+.header .header_banner .banner_container{
+    position: absolute;
+    top: 37%;
+    left: 15%;
+}
+.header .header_banner .banner_container .banner_content{
+}
+.header .header_banner .banner_container .banner_content h1{
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+    text-shadow: #35311E 3px 4px 7px;
+    letter-spacing: 2px; 
+}
+.header .header_banner .banner_container .banner_content a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    padding: 3px 16px 6px 16px;
+    font-size: 22px;
+}
