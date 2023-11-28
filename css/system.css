@@ -4,6 +4,9 @@
 ::-moz-selection {
     background-color: #F1BB00; 
 }
+html, body{
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
 }

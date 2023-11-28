@@ -152,12 +152,13 @@ html, body{
     font-size: 18px;
 }
 .faqs-content .faqs_container .faq_area .box_content .faq_box .answer span a{
-    border-bottom: 1.5px solid #4F7937;
-    color: #4F7937;
+    /* border-bottom: 1.5px solid #4F7937; */
+    color: #fff;
     transition: all .2s ease;
 }
 .faqs-content .faqs_container .faq_area .box_content .faq_box .answer span a:hover{
     background-color:#F1BB00;
+    border-bottom: 1.5px solid #00000000;
     /* padding: 2px 0px; */
     color: #000;
 }

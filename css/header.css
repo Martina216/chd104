@@ -14,46 +14,39 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* border: 1px solid black; */
 }
 .header .header_inner .header_logo{
     max-width: 333px;
     margin-right:auto;
-    /* border: 1px solid black;  */
     padding: 22px 0px 20px 70px;
 } 
 
 .header .header_inner .header_logo img{
     width: 100%;
     vertical-align: middle;
-    /* border: 1px solid salmon;  */
 }
 .header .header_inner .header_main_nav{
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid rgb(51, 14, 20); */
 }
 .header .header_inner .header_main_nav .header_nav{
-    /* border: 1px solid pink; */
     display: flex;
 }
 .header .header_inner .header_main_nav .header_nav ul{
     list-style: none;
-    display: flex;
-    /* border:1px solid white; */
     gap: 16px;
-    
+    justify-content: center;
+    display: flex;
 }
 .header .header_inner .header_main_nav .header_nav li{
     margin: auto;
-    padding: 0px 20px 0px 0px;
+    padding: 0px 10px 0px;
 }
 .header .header_inner .header_main_nav .header_nav li a{
     text-decoration: none;
     color: aliceblue;
     font-size: 17px;
     font-weight: 500;
-    /* background-color: #fa0; */
     position: relative;
 }
 .header .header_inner .header_main_nav .header_nav li a::after {
@@ -80,6 +73,17 @@
     margin: auto;
     padding: 0px 60px 0px 0px;
 }
+@media (width>=1200px) {
+    .header .header_inner .header_main_nav .book-btn{
+        padding: 0px 35px 0px 8px;
+    } 
+}
+@media (width>=1400px) {
+    .header .header_inner .header_main_nav .book-btn{
+        margin: auto;
+        padding: 0px 45px 0px 15px;
+    } 
+}
 .header .header_inner .header_main_nav .book-btn a{
     text-decoration: none;
     text-align: center;
@@ -88,14 +92,20 @@
     font-weight: 500;
     border-radius: 28px;
     background-color: rgba(255, 255, 255, 0.2); 
-    padding: 14px 16px;
+    padding: 12px 14px 12px 18px;
     margin: auto auto auto 16px;
-    transition: background-color .2s ease, font-weight .1s ease-in;
+    transition: all .2s ease-in;
 }
 .header .header_inner .header_main_nav .book-btn a:hover{
     background-color: #FDD340;
     color: #35311E;
     font-weight: 600;
+}
+.header .header_inner .header_main_nav .book-btn a:not(:hover){
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #fff;
+    font-weight: 500;
+    transition: all .3s;
 }
 
 .header .header_banner{
