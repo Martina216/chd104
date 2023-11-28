@@ -48,11 +48,20 @@
 }
 .content_faq .faq_container .faq_more:hover i{
     translate: 0px 0px;
-    color: #A7C398;
+    color: #4F7937;
     transition: all .2s ease-in-out;
 }
 .content_faq .faq_container .faq_more:hover span{
     color: #4F7937;
+    transition: all .2s ease-in-out;
+}
+.content_faq .faq_container .faq_more:not(:hover) i{
+    translate: -10px 0px;
+    color: #cfcfcf;
+    transition: all .2s ease-in-out;
+}
+.content_faq .faq_container .faq_more:not(:hover) span{
+    color: #b4b4b4;
     transition: all .2s ease-in-out;
 }
 .content_faq .faq_container .faq_more .faq_more_icon{
