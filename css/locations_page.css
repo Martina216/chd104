@@ -14,10 +14,11 @@
 .locations-content .locations_title span{
     font-size: 26px;
 }
-
 .locations-content .container .row{
     row-gap: 35px;
-    
+}
+.col-md-4{
+    justify-content: center;
 }
 .locations-content .container .row .card_content{
     border-radius: 30px;

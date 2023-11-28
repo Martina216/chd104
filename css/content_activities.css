@@ -1,27 +1,26 @@
 .content_activities{
     max-width: 1100px;
     margin: auto;
-    padding: 100px 0px 60px 0px;
+    padding: 100px 0px 100px 0px;
+    color: #35311E;
 }
 .content_activities .activities_title{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: auto auto 30px auto;
+    margin: auto auto 50px auto;
 }
 .content_activities .activities_title h2{
     flex:block;
     font-size: 28px;
-    margin: 10px 0px;
+    margin: 0px 0px 20px;
 }
 .content_activities .activities_title span{
     flex:block;
     font-size: 18px;
-    margin: 5px 0px;
+    margin: 0px 0px 0px;
     font-weight:500;
-    color: #35311E;
 }
-.activities_container{}
 .activities_container .container_box{
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +28,16 @@
     justify-content: space-between;
 }
 .activities_container .container_box .box{
-    width: 265px;
+    width: 245px;
+    padding: 0px 10px;
+}
+.activities_container .container_box .box:hover .box_content .activities_icon i{
+    color: #CEED88;
+    transition: all .2s;
+}
+.activities_container .container_box .box:not(:hover) .box_content .activities_icon i{
+    color:  #cfcfcf;
+    transition: all .2s;
 }
 .activities_container .container_box .box .box_pic{
     border-radius: 17px;
@@ -45,15 +53,16 @@
 }
 .activities_container .container_box .box .box_content .activities_icon{
     font-size:35px;
-    padding: 10px;
+    padding: 20px 10px;
 }
 .activities_container .container_box .box .box_content .activities_icon i{
     font-size:100%;
     rotate: -45deg;
+    color:  #cfcfcf;
 }
 .activities_container .container_box .box .box_content .box_text{
-    width: 198px;
-    padding:20px 0px;
+    width: 170px;
+    padding:25px 0px;
 }
 .activities_container .container_box .box .box_content .box_text span{
     font-size: 16px;

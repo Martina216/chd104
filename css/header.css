@@ -60,11 +60,14 @@
 .header .header_inner .header_main_nav .header_nav li a:hover::after {
     opacity: 1;
     width: 100%;
+    translate: 0px 0px;
     left: 0;
 }
-.header .header_inner .header_main_nav .header_nav li a:not(:hover):after {
-    opacity: 0;
+.header .header_inner .header_main_nav .header_nav li a:not(:hover)::after {
+    opacity: 1;
     width: 0;
+    translate: 65px 0px;
+    transition: all .3s ease-in-out; 
 }
 .header .header_inner .header_main_nav .book-btn{
     margin: auto;
