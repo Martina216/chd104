@@ -1,16 +1,57 @@
-.content_price{}
-.content_price .price_container{}
+.content_price{
+    margin: auto;
+    max-width: 1200px;
+}
+.content_price .price_container{
+    width: 100%;
+    margin: 200px auto;
+}
 .content_price .price_container .price_area{}
-.content_price .price_container .price_area{}
 
 
 
+.first{}
+.second{
+    display: flex;
+}
 
-
-
-.content_price .price_container .price_area .p_border{}
-.content_price .price_container .price_area .p_border .p_text{}
+.container{
+    border: 1px solid saddlebrown;
+}
+.row{
+    border: 1px solid salmon;
+}
+.card{
+    border: 1px solid aqua;
+    width: 100%;
+}
+.content_price .price_container .price_area .p_border{
+    border: 8px solid #D3E5C8;
+    border-radius: 20px;
+}
+.content_price .price_container .price_area .p_border .p_text{
+    width: 200px;
+    position: relative;
+}
+.content_price .price_container .price_area .p_border .p_text:hover i{
+    top: -10%;
+    left: 86%;
+    transition: all .2s ease-in;
+}
+.content_price .price_container .price_area .p_border .p_text:not(:hover) i{
+    top: 10%;
+    left: 80%;
+    transition: all .2s ease-in;
+}
 .content_price .price_container .price_area .p_border .p_text .p_p{}
 .content_price .price_container .price_area .p_border .p_text .p_name{}
 .content_price .price_container .price_area .p_border .p_text .p_detail{}
-.content_price .price_container .price_area .p_border .p_text i{}
+
+.content_price .price_container .price_area .p_border .p_text i{
+    color: #D3E5C8;
+    font-size: 35px;
+    rotate: -45deg;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+}
