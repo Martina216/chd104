@@ -2,8 +2,6 @@
     max-width: 1920px;
     position: relative;
     margin: auto;
-    font-family:'Noto Sans TC','sans-serif';
-    letter-spacing: 1px;  
     background-color: #555;
 }
 .header .header_inner{
@@ -12,35 +10,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* border: 1px solid black; */
 }
 .header .header_inner .header_logo{
     max-width: 333px;
     margin-right:auto;
-    /* border: 1px solid black;  */
     padding: 22px 0px 20px 70px;
 }
 
 .header .header_inner .header_logo img{
     width: 100%;
     vertical-align: middle;
-    /* border: 1px solid salmon;  */
 }
 .header .header_inner .header_main_nav{
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid rgb(51, 14, 20); */
 }
 .header .header_inner .header_main_nav .header_nav{
-    /* border: 1px solid pink; */
     display: flex;
 }
 .header .header_inner .header_main_nav .header_nav ul{
     list-style: none;
     display: flex;
-    /* border:1px solid white; */
     gap: 16px;
-    
 }
 .header .header_inner .header_main_nav .header_nav li{
     margin: auto;
@@ -51,7 +42,6 @@
     color: #4F7937;
     font-size: 17px;
     font-weight: 500;
-    /* background-color: #fa0; */
     position: relative;
 }
 .header .header_inner .header_main_nav .header_nav li a::after {

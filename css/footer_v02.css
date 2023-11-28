@@ -1,12 +1,10 @@
 .footer{
-    font-family:'Noto Sans TC','sans-serif'; 
     font-weight: 300;
     margin:120px auto 0px;
     background-color: #fff;
     color: #fff;
     padding: 0px 16px;
     box-sizing: border-box;
-    letter-spacing: 1px;
     z-index: 1;
     position: relative;
 }

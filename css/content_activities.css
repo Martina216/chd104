@@ -1,28 +1,22 @@
 .content_activities{
     max-width: 1100px;
     margin: auto;
-    /* border: 1.5px solid green; */
     padding: 100px 0px 60px 0px;
-    font-family:'Noto Sans TC','sans-serif';
-    letter-spacing: 1px;
 }
 .content_activities .activities_title{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: auto auto 30px auto;
-    /* background-color: #fa0; */
 }
 .content_activities .activities_title h2{
     flex:block;
     font-size: 28px;
     margin: 10px 0px;
-    /* border: 1px solid black; */  
 }
 .content_activities .activities_title span{
     flex:block;
     font-size: 18px;
-    /* border: 1px solid salmon; */
     margin: 5px 0px;
     font-weight:500;
     color: #35311E;
@@ -33,18 +27,17 @@
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-between;
-    /* border: 1px solid blueviolet; */
 }
 .activities_container .container_box .box{
     width: 265px;
 }
 .activities_container .container_box .box .box_pic{
-    /* width: 255px; */ 
+    border-radius: 17px;
+    overflow: hidden;
 }
 .activities_container .container_box .box .box_pic  img{
     width: 100%;
     vertical-align: middle;
-    border-radius: 17px;
 }
 .activities_container .container_box .box .box_content{
     display: flex;
@@ -53,7 +46,6 @@
 .activities_container .container_box .box .box_content .activities_icon{
     font-size:35px;
     padding: 10px;
-    /* border: 1px solid blueviolet; */
 }
 .activities_container .container_box .box .box_content .activities_icon i{
     font-size:100%;
@@ -62,7 +54,6 @@
 .activities_container .container_box .box .box_content .box_text{
     width: 198px;
     padding:20px 0px;
-    /* border: 1px solid pink; */
 }
 .activities_container .container_box .box .box_content .box_text span{
     font-size: 16px;

@@ -1,5 +1,4 @@
 .content_map{
-    font-family:'Noto Sans TC','sans-serif';
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -16,7 +15,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* border: 2px solid black; */
 }
 .content_map .map_title ul li{
     margin: 10px 0;
@@ -39,11 +37,8 @@
     width: 800px;
     display: flex;
     justify-content: center;
-    /* border: 1px solid black; */
     margin: 0 auto;
-    /* aspect-ratio: 60/45; */
 }
-
 .content_map .map_container iframe{
     width: 600px;
     height: 450px;
