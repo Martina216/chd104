@@ -69,10 +69,6 @@ img{
     width: 300px;
     margin-right: 10px;
 }
-#fam .family .family_img img{
-    width: 100%;
-    vertical-align: middle;
-}
 #fam::-webkit-scrollbar-track {
     background-color: #A7C398;
     border-radius: 5px;
@@ -82,25 +78,41 @@ img{
     border-radius: 5px;
 }
 #fam::-webkit-scrollbar {
-    /* width: 5px; */
     height: 6px;
 }
-.family .family_title .col-md-3:last-child{
+.family .family_title{
+    width: 200px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-grow: 1;
+    align-items:center;
 }
-.family .family_title{}
-
 .family .family_title span{
-    display: block;
-    width: 300px;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    align-items:center;
+    width: 128px;
 }
-
-
-
-
-
-
+.family .family_title .family_icon{
+    display: flex;
+    height: 40px;
+    font-size: 35px;
+    color: #cfcfcf;
+    padding: 0px 10px;
+}
+.family .family_title .family_icon i{
+    width: 100%;
+    rotate: -45deg;
+}
+.family:hover .family_icon{
+    color: #4F7937;
+    transition: all .25s ease-in;
+}
+.family:not(:hover) .family_icon{
+    color: #cfcfcf;
+    transition: all .25s ease-in;
+}
+/* ----------------------------------------------------- */
 .groups_category{
     max-width: 1200px;
     margin:auto;
@@ -133,7 +145,7 @@ img{
     width: 820px;
     position: relative;
 }
-.party .party_img::before {
+.party .party_img::after {
     content: '';
     position: absolute;
     top: 0;
@@ -143,6 +155,23 @@ img{
     box-shadow: inset 10px 10px 70px -10px rgba(0, 0, 0, 0.3); 
     z-index: 0;
 }
+.party:hover .party_img img{
+    transform: scale(1.05);
+    transition: all .25s ease-in;
+}
+.party:not(:hover) .party_img img{
+    transform: scale(1);
+    transition: all .25s ease-in;
+}
+.party:hover .party_icon{
+    color: #4F7937;
+    transition: all .25s ease-in;
+}
+.party:not(:hover) .party_icon{
+    color: #cfcfcf;
+    transition: all .25s ease-in;
+}
+/* ---------------------------------------------------------- */
 .groups_category .first .row .card{
     margin: 0px auto;
     display: flex;
@@ -158,7 +187,6 @@ img{
     overflow: hidden;
     border-radius: 40px;
 }
-
 .groups_category .container .row .card .ts_s-img{
     width: 300px;
     overflow: hidden;
@@ -188,4 +216,29 @@ img{
     rotate: -45deg;
     color:  #cfcfcf;
     padding: 0 10px;
+}
+.groups_category .container .row .card .ts_lg-img:hover img{
+    transform: scale(1.05);
+    transition: all .25s ease-in;
+}
+.groups_category .container .row .card .ts_lg-img:not(:hover) img{
+    transform: scale(1);
+    transition: all .25s ease-in;
+}
+.groups_category .container .row .card .ts_s-img:hover img{
+    transform: scale(1.05);
+    transition: all .25s ease-in;
+}
+.groups_category .container .row .card .ts_s-img:not(:hover) img{
+    transform: scale(1);
+    transition: all .25s ease-in;
+}
+
+.groups_category .container .row .card:hover .grp_icon{
+    color: #4F7937;
+    transition: all .25s ease-in;
+}
+.groups_category .container .row .card:not(:hover) .grp_icon{
+    color: #cfcfcf;
+    transition: all .25s ease-in;
 }
