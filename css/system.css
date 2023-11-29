@@ -4,9 +4,9 @@
 ::-moz-selection {
     background-color: #F1BB00; 
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none; 
-}       
+}        */
 html, body{
     scroll-behavior: smooth;
     font-family:'Noto Sans TC','sans-serif';
