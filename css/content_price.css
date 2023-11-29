@@ -125,12 +125,11 @@
 }
 .content_price .price_container .price_area .p_img{
     margin: auto;
-    /* width: 655px; */
     padding: 0px 20px;
     height: 255px;
     overflow: hidden;
     margin: 0px 0px 35px 0px;
-    border-radius: 20px;
+    border-radius: 40px;
     box-sizing: border-box;
 }
 .content_price .price_container .price_area .p_img img{

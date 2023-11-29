@@ -14,23 +14,34 @@
 .activities .activities_title span{
     font-size: 26px;
 }
-.activities-content{}
+.activities-content .activities_menu{
+    max-width:750px;
+    margin: 0px auto 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.activities-content .activities_menu a{
+    display: flex;
+    width: 125px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #A7C398;
+    color: #000;
+    font-size: 18px;
+}
 .activities-content .activities_box{
     margin: 100px 0px;
 }
-
-
-.container{}
-.container .row{}
 .container .row .card{
     display: flex;
     flex-wrap: wrap;
     width: 800px;
 }
-
-
-
-
 .activities-content .activities_box .actv_information{
     width: 410px;
     display: flex;
@@ -51,7 +62,6 @@
     font-size: 22px;
     color: red;
 }
-
 .activities-content .activities_box .actv_information .actv_tag{
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +88,6 @@
     width: 100%;
     vertical-align: middle;
 }
-
 .more_box {
     display: flex;
     flex-wrap: wrap;
@@ -123,9 +132,6 @@
     font-size: 35px;
     color: #CCDEA3;
 }
-.more_box .more_information .more_detail .more_category i{
-
-}
 .sup_blk{
     width: 140px;
 }
@@ -152,14 +158,4 @@
     bottom: -140px;
     right: -52%;
     z-index: -2;
-
 }
-
-
-
-
-
-
-
-
-
