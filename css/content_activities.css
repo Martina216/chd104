@@ -1,3 +1,7 @@
+img{
+    width: 100%;
+    vertical-align: middle;
+}
 .content_activities{
     max-width: 1100px;
     margin: auto;
@@ -25,35 +29,35 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    justify-content: space-between;
+    justify-content: center;
 }
 .activities_container .container_box .box{
     width: 245px;
     padding: 0px 10px;
+    position: relative;
 }
-.activities_container .container_box .box:hover .box_content .activities_icon i{
-    color: #CEED88;
-    transition: all .2s;
+.activities_container .container_box .box .box_title{
+    font-size: 34px;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    z-index: 1;
+    opacity: 0;
 }
-.activities_container .container_box .box:not(:hover) .box_content .activities_icon i{
-    color:  #cfcfcf;
-    transition: all .2s;
-}
+
 .activities_container .container_box .box .box_pic{
     border-radius: 17px;
     overflow: hidden;
 }
-.activities_container .container_box .box .box_pic  img{
-    width: 100%;
-    vertical-align: middle;
-}
+/* ---------------------------------------------------- */
 .activities_container .container_box .box .box_content{
     display: flex;
     flex-wrap: wrap;
 }
 .activities_container .container_box .box .box_content .activities_icon{
     font-size:35px;
-    padding: 20px 10px;
+    padding: 20px 16px 25px 4px;
 }
 .activities_container .container_box .box .box_content .activities_icon i{
     font-size:100%;
@@ -67,3 +71,25 @@
 .activities_container .container_box .box .box_content .box_text span{
     font-size: 16px;
 }
+/* ---------------------------------------------------- */
+.activities_container .container_box .box:hover .box_pic{
+    filter: brightness(60%);
+    transition: all .2s ease-in;
+}
+.activities_container .container_box .box:not(:hover) .box_pic{
+    filter: brightness(100%);
+    transition: all .2s ease-in;
+}
+.activities_container .container_box .box:hover .box_title{
+    top:32.5%;
+    left: 25%;
+    opacity: 1;
+    transition: all .3s ease;
+}
+.activities_container .container_box .box:not(:hover) .box_title{
+    top:30%;
+    left: 25%;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
