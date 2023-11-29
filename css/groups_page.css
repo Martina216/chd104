@@ -2,6 +2,9 @@ img{
     width: 100%;
     vertical-align: middle;
 }
+[class*="col-md-"]{
+    justify-content: center;
+}
 .groups-content{
     max-width: 1200px;
     margin: auto;
@@ -45,27 +48,63 @@ img{
     flex-wrap: wrap;
     justify-content: center;
 }
-.groups-content .groups_container .faq_banner{
-    margin: 0px 0px 0px;
+#fam{
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 250px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* cursor: move; */
+    cursor: url('../img/right-long-solid_zoom.svg'),auto;
 }
-.groups-content .groups_container .faq_banner .banner_img{
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 420px;
+#fam .family{
+    width: 1200px;
+    gap:10px;
+    display: flex;
+    flex-wrap: nowrap;
 }
-.groups-content .groups_container .faq_banner .banner_img img{
+#fam .family .family_img{
+    border-radius: 40px;
+    overflow: hidden;
+    width: 300px;
+    margin-right: 10px;
+}
+#fam .family .family_img img{
     width: 100%;
     vertical-align: middle;
-    border-radius: 30px;
 }
-[class*="col-md-"]{
-    justify-content: center;
+#fam::-webkit-scrollbar-track {
+    background-color: #A7C398;
+    border-radius: 5px;
 }
+#fam::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+#fam::-webkit-scrollbar {
+    /* width: 5px; */
+    height: 6px;
+}
+.family .family_title .col-md-3:last-child{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.family .family_title{}
+
+.family .family_title span{
+    display: block;
+    width: 300px;
+}
+
+
+
+
+
+
 .groups_category{
     max-width: 1200px;
-    margin: 120px auto;
-    
+    margin:auto;
+    padding: 60px 0px;
 }
 .party{
     position: relative;
@@ -88,8 +127,6 @@ img{
     color:  #cfcfcf;
     padding: 0 10px;
 }
-
-
 .party .party_img{
     border-radius: 40px;
     overflow: hidden;
@@ -106,10 +143,6 @@ img{
     box-shadow: inset 10px 10px 70px -10px rgba(0, 0, 0, 0.3); 
     z-index: 0;
 }
-
-
-
-
 .groups_category .first .row .card{
     margin: 0px auto;
     display: flex;
@@ -155,60 +188,4 @@ img{
     rotate: -45deg;
     color:  #cfcfcf;
     padding: 0 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.horizontal-scroll {
-    width: 100%; /* 设置容器宽度 */
-    height: 400px; /* 设置容器高度 */
-    overflow-x: auto; /* 水平滚动 */
-    white-space: nowrap; /* 防止文本换行 */
-}
-
-/* 内容区域 */
-.horizontal-scroll .content {
-    display: inline-block; /* 让内容在一行内显示 */
-    white-space: nowrap; /* 防止内容换行 */
-}
-.horizontal-scroll .content span{
-    font-size: 30px;
-}
-
-/* 设置滚动条样式（可选） */
-/* 定义滚动条的轨道 */
-.horizontal-scroll::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-}
-
-/* 定义滚动条滑块 */
-.horizontal-scroll::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
-}
-
-/* 定义滚动条的外观 */
-.horizontal-scroll::-webkit-scrollbar {
-    width: 10px;
 }
