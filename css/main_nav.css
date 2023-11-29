@@ -2,7 +2,7 @@
     max-width: 1920px;
     position: relative;
     margin: auto;
-    background-color: #555;
+    /* background-color: #555; */
 }
 .header .header_inner{
     width: 100%;
@@ -50,7 +50,7 @@
     left: 0;
     bottom: -5px;
     width: 0%;
-    height: 2px;
+    height: 1.5px;
     background-color: #4F7937;
     opacity: 0;
     transition: width .3s ease-in-out; 
@@ -58,11 +58,14 @@
 .header .header_inner .header_main_nav .header_nav li a:hover::after {
     opacity: 1;
     width: 100%;
+    translate: 0px 0px;
     left: 0;
 }
-.header .header_inner .header_main_nav .header_nav li a:not(:hover):after {
-    opacity: 0;
+.header .header_inner .header_main_nav .header_nav li a:not(:hover)::after {
+    opacity: 1;
     width: 0;
+    translate: 65px 0px;
+    transition: all .3s ease-in-out; 
 }
 .header .header_inner .header_main_nav .book-btn{
     margin: auto;
@@ -78,10 +81,16 @@
     background-color: #4F7937; 
     padding: 14px 16px;
     margin: auto auto auto 16px;
-    transition: background-color .2s ease, font-weight .1s ease-in;
+    transition: all .2s ease-in;
 }
 .header .header_inner .header_main_nav .book-btn a:hover{
     background-color: #FDD340;
     color: #4F7937;
     font-weight: 600;
+}
+.header .header_inner .header_main_nav .book-btn a:not(:hover){
+    background-color: #4F7937;
+    color: #fff;
+    font-weight: 500;
+    transition: all .3s;
 }
