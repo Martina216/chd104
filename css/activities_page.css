@@ -35,7 +35,8 @@
     font-size: 18px;
 }
 .activities-content .activities_box{
-    margin: 100px 0px;
+    padding: 100px 0px 200px;
+    position: relative;
 }
 .container .row .card{
     display: flex;
@@ -158,4 +159,56 @@
     bottom: -140px;
     right: -52%;
     z-index: -2;
+}
+/* ------------------------------------------------------------- */
+.actv_bgc{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    width: 630px;
+    height: 630px;
+    background-color: #ECFBCA;
+    border-radius: 50%; 
+    z-index: -2;
+    bottom: 10%;
+    left: 5%;
+}
+.actv_bgc .bgc_blk{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.actv_bgc2{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    width: 580px;
+    height: 580px;
+    background-color: #ECFBCA;
+    border-radius: 50%; 
+    z-index: -2;
+    bottom: 10%;
+    right: 8%;
+}
+.actv_bgc2 .bgc_blk span{
+    display: block;
+    width: 330px;
+    height: 330px;
+    background-color: #ECFBCA;
+    border-radius: 50%; 
+    position: absolute;
+    left: 65%;
+    bottom: -8%;
+}
+.actv_bgc3{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background-color: #FFE692;
+    border-radius: 50%; 
+    z-index: -2;
+    bottom: 18%;
+    left: 8%;
 }
