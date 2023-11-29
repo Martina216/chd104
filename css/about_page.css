@@ -1,0 +1,100 @@
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+/* ------------------------------------------------ */
+.about_content{
+    max-width: 1280px;
+}
+.about_content .about_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    margin: auto;
+    position: relative;
+}
+.about_content .about_banner .banner_img{}
+.about_content .about_banner .banner_title{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 20px;
+}
+
+.about_content .about_banner .logo{
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 50%;
+    transform: translate(-55%, -150%);
+}
+/* ------------------------------------------------ */
+.card{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 700px;
+    margin: 5px auto;
+    gap: 10px;
+}
+
+.staff_content{
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+}
+.staff_content .staff_value:nth-child(1){
+    order: -2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 20px;
+}
+.staff_content .staff_value:nth-child(2){
+    order: -2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 20px;
+}
+/* ------------------------------------------------ */
+.about_content .about_banner:last-child .banner_img{
+    border-radius: 40px;
+    overflow: hidden;
+}
+.about_content .about_banner:last-child .banner_title{
+    color: #fff;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.brand_value{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
+    color:#00000020;
+}
+.about_content .brand_value_content .brand_value:first-child span{
+    font-size: 200px;
+}
+.about_content .brand_value_content .brand_value:last-child{
+    justify-content: center;
+    gap:15px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #35311E;
+    padding: 200px 0;
+}
+.about_content .brand_value_content .brand_value:last-child span:first-child{
+    color: #F1BB00;
+    
+}
+.about_content .brand_value_content .brand_value:last-child span:last-child{
+    color: #4F7937;
+}
+/* ------------------------------------------------ */
