@@ -4,6 +4,7 @@ img{
 }
 /* ------------------------------------------------ */
 .about_content{
+    color:#35311E;
     max-width: 1280px;
 }
 .about_content .about_banner{
@@ -34,32 +35,59 @@ img{
     display: flex;
     flex-wrap: nowrap;
     width: 700px;
-    margin: 5px auto;
-    gap: 10px;
+    margin: 3.5px auto;
+    gap: 7px;
 }
-
+/* -------------------------------------*/
+.card:first-child .col-md-4:first-child{
+    border-top-left-radius: 40px;
+    overflow: hidden;
+}
+.card:first-child .col-md-4:last-child{
+    border-top-right-radius: 40px;
+    overflow: hidden;
+}
+.card:last-child .col-md-4:first-child{
+    border-bottom-left-radius: 40px;
+    overflow: hidden;
+}
+.card:last-child .col-md-4:last-child{
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+}
+/* -------------------------------------*/
 .staff_content{
-    margin: 80px auto;
+    margin: 80px auto 0px;
     display: flex;
     flex-direction: column;
-}
-.staff_content .staff_value:nth-child(1){
-    order: -2;
-    display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.staff_content .staff_value{
+    order: -1;
     padding: 50px 0;
     font-size: 20px;
 }
-.staff_content .staff_value:nth-child(2){
-    order: -2;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-    padding: 50px 0;
+.staff_content .staff_value2{
+    padding: 80px 0;
     font-size: 20px;
+}
+.staff_content .staff_value3{
+    padding: 80px 0;
+    font-size: 40px;
+}
+.staff_content .staff_value4{
+    padding: 40px 0px 40px;
+    font-size: 20px;
+}
+.staff_content .sup-blk{
+    background-color: #35311E;
+    width: 1px;
+    height: 80px;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
 }
 /* ------------------------------------------------ */
 .about_content .about_banner:last-child .banner_img{
@@ -92,7 +120,6 @@ img{
 }
 .about_content .brand_value_content .brand_value:last-child span:first-child{
     color: #F1BB00;
-    
 }
 .about_content .brand_value_content .brand_value:last-child span:last-child{
     color: #4F7937;
