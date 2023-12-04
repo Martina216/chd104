@@ -1,9 +1,9 @@
-.header{
+header{
     max-width: 1920px;
     position: relative;
     margin: auto;  
 }
-.header .header_inner{
+.header_inner{
     z-index: 1;
     position: absolute;
     top:0;
@@ -13,39 +13,39 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.header .header_inner .header_logo{
+.header_inner .header_logo{
     max-width: 333px;
     margin-right:auto;
     padding: 22px 0px 20px 70px;
 } 
-.header .header_inner .header_logo img{
+.header_inner .header_logo img{
     width: 100%;
     vertical-align: middle;
 }
-.header .header_inner .header_main_nav{
+.header_inner .header_main_nav{
     display: flex;
     flex-wrap: wrap;
 }
-.header .header_inner .header_main_nav .header_nav{
+.header_inner .header_main_nav .header_nav{
     display: flex;
 }
-.header .header_inner .header_main_nav .header_nav ul{
+.header_inner .header_main_nav .header_nav ul{
     list-style: none;
     gap: 16px;
     display: flex;
 }
-.header .header_inner .header_main_nav .header_nav li{
+.header_inner .header_main_nav .header_nav li{
     margin: auto;
     padding: 0px 20px 0px 0px;
 }
-.header .header_inner .header_main_nav .header_nav li a{
+.header_inner .header_main_nav .header_nav li a{
     text-decoration: none;
     color: aliceblue;
     font-size: 17px;
     font-weight: 500;
     position: relative;
 }
-.header .header_inner .header_main_nav .header_nav li a::after {
+.header_inner .header_main_nav .header_nav li a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -56,33 +56,33 @@
     opacity: 0;
     transition: width .3s ease-in-out; 
 }
-.header .header_inner .header_main_nav .header_nav li a:hover::after {
+.header_inner .header_main_nav .header_nav li a:hover::after {
     opacity: 1;
     width: 100%;
     translate: 0px 0px;
     left: 0;
 }
-.header .header_inner .header_main_nav .header_nav li a:not(:hover)::after {
+.header_inner .header_main_nav .header_nav li a:not(:hover)::after {
     opacity: 1;
     width: 0;
     translate: 65px 0px;
     transition: all .3s ease-in-out; 
 }
-.header .header_inner .header_main_nav .book-btn{
+.header_inner .header_main_nav .book-btn{
     margin: auto;
 }
 @media (width>=0px) {
-    .header .header_inner .header_main_nav .book-btn{
+    .header_inner .header_main_nav .book-btn{
         padding: 0px 60px 0px 0px;
     } 
 }
 @media (width>=1400px) {
-    .header .header_inner .header_main_nav .book-btn{
+    .header_inner .header_main_nav .book-btn{
         margin: auto;
         padding: 0px 45px 0px 15px;
     } 
 }
-.header .header_inner .header_main_nav .book-btn a{
+.header_inner .header_main_nav .book-btn a{
     text-decoration: none;
     text-align: center;
     color: #fff;
@@ -94,41 +94,39 @@
     margin: auto auto auto 16px;
     transition: all .2s ease-in;
 }
-.header .header_inner .header_main_nav .book-btn a:hover{
+.header_inner .header_main_nav .book-btn a:hover{
     background-color: #FDD340;
     color: #35311E;
     font-weight: 600;
 }
-.header .header_inner .header_main_nav .book-btn a:not(:hover){
+.header_inner .header_main_nav .book-btn a:not(:hover){
     background-color: rgba(255, 255, 255, 0.2); 
     color: #fff;
     font-weight: 500;
     transition: all .3s;
 }
-.header .header_banner{
+.header_banner{
     position: relative;
 }
-.header .header_banner img{
+.header_banner img{
     width: 100%;
     vertical-align: middle;
     margin: 0 auto;
     border-radius: 0 0 40px 40px;
 }
-.header .header_banner .banner_container{
+.header_banner .banner_container{
     position: absolute;
     top: 37%;
     left: 15%;
 }
-.header .header_banner .banner_container .banner_content{
-}
-.header .header_banner .banner_container .banner_content h1{
+.header_banner .banner_container .banner_content h1{
     color: #fff;
     font-size: 58px;
     font-weight: 600;
     text-shadow: #35311E 3px 4px 7px;
     letter-spacing: 2px; 
 }
-.header .header_banner .banner_container .banner_content a{
+.header_banner .banner_container .banner_content a{
     text-decoration: none;
     color: #fff;
     border: 2px solid #fff;

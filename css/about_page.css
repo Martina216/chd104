@@ -6,6 +6,7 @@ img{
 .about_content{
     color:#35311E;
     max-width: 1280px;
+    margin: auto;
 }
 .about_content .about_banner{
     display: flex;
@@ -16,13 +17,11 @@ img{
     margin: auto;
     position: relative;
 }
-.about_content .about_banner .banner_img{}
 .about_content .about_banner .banner_title{
     text-align: center;
     padding: 50px 0;
     font-size: 20px;
 }
-
 .about_content .about_banner .logo{
     position: absolute;
     z-index: 1;
@@ -33,26 +32,18 @@ img{
 /* ------------------------------------------------ */
 .card{
     display: flex;
-    flex-wrap: nowrap;
-    width: 700px;
+    flex-wrap: wrap;
+    width: 914px;
     margin: 3.5px auto;
     gap: 7px;
+    justify-content: center;
+}
+.col-md-4{
+    width: 300px;
 }
 /* -------------------------------------*/
-.card:first-child .col-md-4:first-child{
-    border-top-left-radius: 40px;
-    overflow: hidden;
-}
-.card:first-child .col-md-4:last-child{
-    border-top-right-radius: 40px;
-    overflow: hidden;
-}
-.card:last-child .col-md-4:first-child{
-    border-bottom-left-radius: 40px;
-    overflow: hidden;
-}
-.card:last-child .col-md-4:last-child{
-    border-bottom-right-radius: 40px;
+.card{
+    border-radius: 40px;
     overflow: hidden;
 }
 /* -------------------------------------*/
@@ -150,23 +141,9 @@ img{
     border: 2px solid #4F793740;
     border-radius: 50px;
     padding: .6em 26px;
+    transition: all .2s ease-in;
 }
 .about_content .book a:hover{
     color: #fff;
-    background-color: #4F7937;
-    transition: all .2s ease-in;
+    background-color: #4F7937; 
 }
-.about_content .book a:not(:hover){
-    color: #4F7937;
-    border: 2px solid #4F793740;
-    transition: all .2s ease-in;
-}
-.about_content .book span{}
-
-
-
-
-
-
-
-

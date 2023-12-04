@@ -95,22 +95,20 @@
     padding: 10px 0px 10px;
 }
 .comment::before {
-    content: "";
+    content: "?";
 }
 .first .p_border .p_text .comment{
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: .5px solid black;
-    font-size: 10px;
+    border: .5px solid #35311E;
+    font-size: 12px;
     position: absolute;
-    font-weight: bold;
-    top: 49%;
-    left: 60%;
+    top: 40%;
+    left: 65%;
 }
 .second .p_border .p_text .p_detail{
     padding: 0px;

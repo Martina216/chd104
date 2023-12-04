@@ -1,10 +1,29 @@
 .content_map{
     max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: auto;
 }
+
+.content_map .map_menu{
+    max-width:750px;
+    margin: 0px auto 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.content_map .map_menu a{
+    display: flex;
+    width: 125px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #A7C398;
+    color: #fff;
+    font-size: 18px;
+}
+
 .content_map .map_title{
     margin:0px auto 10px;
 }
@@ -26,7 +45,7 @@
     align-items: center;
     color: #fff;
     font-size: 22px;
-    background-color: #8FB0E4;
+    background-color: #A7C398;
     border-radius: 40px;
     padding:8px 20px;
     min-width: 100px;
@@ -44,5 +63,5 @@
     height: 450px;
     vertical-align: middle;
     width: 100%;
-    border-radius: 50px;
+    border-radius: 40px;
 }

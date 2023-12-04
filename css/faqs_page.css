@@ -32,14 +32,19 @@
     text-decoration: none;
     border-radius: 20px;
     background-color: #A7C398;
-    color: #35311E;
+    color: #fff;
     font-size: 18px;
+    transition: all .2s ease-in;
+}
+.faqs_menu a:hover{
+    color:#fff;
+    background-color: #4F7937
 }
 .faqs-content .faqs_container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .faqs-content .faqs_container .faq_banner{
     margin: 0px 0px 0px;
@@ -48,7 +53,7 @@
     position: sticky;
     top: 0;
     left: 0;
-    width: 420px;
+    width: 550px;
 }
 .faqs-content .faqs_container .faq_banner .banner_img img{
     width: 100%;
@@ -64,20 +69,17 @@
 .faqs-content .faqs_container .faq_area .box_content{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     width: 400px;
     gap: 10px;
 }
 .faqs-content .faqs_container .faq_area .box_content .faq_category{
     margin-left:0;
     padding: 46px 20px 10px;
-    /* border: 1px solid black; */
 }
 .faqs-content .faqs_container .faq_area .box_content .faq_category span{
     display: flex;
     font-size: 30px;
-    color: #CCDEA3;
-    /* border: 1px solid black; */
+    color: #5B5230;
 }
 .faqs-content .faqs_container .faq_area .box_content .faq_box{
     background-color: #CCDEA3;
@@ -90,21 +92,13 @@
     margin:auto 0px;
     font-size: 22px;
 }
-.faqs-content .faqs_container .faq_area .box_content .faq_box:hover i{
-    transition: all .4s ease-in-out;
-    rotate: 135deg;
-}
-.faqs-content .faqs_container .faq_area .box_content .faq_box:not(:hover) i{
-    transition: all .6s ease-in-out;
-    rotate: 0deg;
-}
 .faqs-content .faqs_container .faq_area .box_content .faq_box .question{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto 0px;
-    padding: 0px 0px 0px;
     color: #35311E;
+    cursor: pointer;
 }
 .faqs-content .faqs_container .faq_area .box_content .faq_box .question span{
     display: flex;
@@ -197,7 +191,7 @@
 .faqs-content .faqs_container .faq_area .box_content .faq_box .answer span a{
     border-bottom: 1.5px solid #4F7937;
     color: #fff;
-    transition: all .2s ease;
+    transition: all .3s ease-in;
 }
 .faqs-content .faqs_container .faq_area .box_content .faq_box .answer span a:hover{
     background-color:#F1BB00;
