@@ -1,0 +1,94 @@
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+.content_activities{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 0px;
+    color: #35311E;
+}
+.content_activities .activities_title{
+    width: 100%;
+    margin: auto auto 40px auto;
+    padding: 0px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.content_activities .activities_title span:first-child{
+    font-size: 28px;
+    margin: 0px 0px 20px;
+    font-weight: bold;
+}
+.content_activities .activities_title span:last-child{
+    font-size: 18px;
+}
+.activities_container{
+    padding: 0 0 0 20px;
+}
+.activities_container .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.activities_container .card{
+    width: 250px;
+    padding: 0 8px;
+    position: relative;
+}
+.activities_container .card .box_title{
+    font-size: 34px;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    z-index: 1;
+    opacity: 0;
+}
+.activities_container .card .box_pic{
+    border-radius: 17px;
+    overflow: hidden;
+}
+/* ---------------------------------------------------- */
+.activities_container .card .box_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.activities_container .card .box_content .activities_icon{
+    font-size:35px;
+    padding: 20px 16px 25px 4px;
+}
+.activities_container .card .box_content .activities_icon i{
+    font-size:100%;
+    rotate: -45deg;
+    color:  #cfcfcf;
+}
+.activities_container .card .box_content .box_text{
+    width: 170px;
+    padding:25px 0px;
+}
+.activities_container .card .box_content .box_text span{
+    font-size: 16px;
+}
+/* ---------------------------------------------------- */
+.activities_container .card:hover .box_pic{
+    filter: brightness(60%);
+    transition: all .2s ease-in;
+}
+.activities_container .card:not(:hover) .box_pic{
+    filter: brightness(100%);
+    transition: all .2s ease-in;
+}
+.activities_container .card:hover .box_title{
+    top:32.5%;
+    left: 25%;
+    opacity: 1;
+    transition: all .3s ease;
+}
+.activities_container .card:not(:hover) .box_title{
+    top:30%;
+    left: 25%;
+    opacity: 0;
+    transition: all .3s ease;
+}
+

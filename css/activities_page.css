@@ -63,33 +63,22 @@
     font-size: 22px;
     color: red;
 }
-.activities-content .activities_box .actv_information .actv_tag{
+.activities-content .activities_box .actv_information .tag{
     display: flex;
     flex-wrap: wrap;
-}
-.locations-content .container .row .card_content .card_tag {
     width: 300px;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0px 0px 16px;
 }
-
-
-
-
-.activities-content .activities_box .actv_information .actv_tag span{
-    display: flex;
-    width: 90px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
+.activities-content .activities_box .actv_information .actv_tag {
+    width: 70px;
+    text-align: center;
     background-color: #CCDEA3;
     color: #5B5230;
-    margin:4px 8px 4px 0px;
-    padding: 4px;
-    border-radius: 20px;
+    margin:4px;
+    padding: 0 4px;
 }
+
 .activities-content .activities_box .actv_img{
     width: 380px;
     height: 350px;

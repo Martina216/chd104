@@ -66,14 +66,14 @@
     font-size: 16px;
     color: #48472F;
 }
-.locations-content .container .row .card_content .card_tag{
-    width: 300px;
+.locations-content .container .row .card_content .tag{
     display: flex;
     flex-wrap: wrap;
+    width: 300px;
     justify-content: space-between;
     margin: 0px 0px 16px;
 }
-.locations-content .container .row .card_content .card_tag .actv_tag{
+.locations-content .container .row .card_content .tag .actv_tag{
     width: 70px;
     text-align: center;
     background-color: #CCDEA3;
@@ -81,6 +81,6 @@
     margin:4px;
     padding: 4px;
 }
-.locations-content .container .row .card_content .card_tag .actv_tag:nth-child(6){
+.locations-content .container .row .card_content .tag .actv_tag:nth-child(6){
     background-color: transparent;
 }
