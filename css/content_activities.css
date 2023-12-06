@@ -34,15 +34,19 @@ img{
 .activities_container .card .content i{
     rotate: -45deg;
 }
-@media (width<=768px) {
+@media (width<=430px) {
     .content_activities{
         max-width: 768px;
     }
     .activities_title{
-        width: 768px;
+        padding: 30px;
+    }
+    .activities_title span:first-child{
+        padding: 20px 0px;
     }
     .activities_container .card{
-        width: 400px;
+        max-width: 400px;
+        width: 100%;
     }
     .activities_container .card .title{
         font-size: 32px;
