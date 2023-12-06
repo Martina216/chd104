@@ -1,136 +1,263 @@
-header{
-    max-width: 1920px;
-    position: relative;
-    margin: auto;  
-}
-.header_inner{
-    z-index: 1;
-    position: absolute;
-    top:0;
-    width: 100%;
-    margin:auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.header_inner .header_logo{
-    max-width: 333px;
-    margin-right:auto;
-    padding: 22px 0px 20px 70px;
-} 
-.header_inner .header_logo img{
-    width: 100%;
-    vertical-align: middle;
-}
-.header_inner .header_main_nav{
-    display: flex;
-    flex-wrap: wrap;
-}
-.header_inner .header_main_nav .header_nav{
-    display: flex;
-}
-.header_inner .header_main_nav .header_nav ul{
-    list-style: none;
-    gap: 16px;
-    display: flex;
-}
-.header_inner .header_main_nav .header_nav li{
-    margin: auto;
-    padding: 0px 20px 0px 0px;
-}
-.header_inner .header_main_nav .header_nav li a{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 17px;
-    font-weight: 500;
-    position: relative;
-}
-.header_inner .header_main_nav .header_nav li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0%;
-    height: 2px;
-    background-color: #ffffff;
-    opacity: 0;
-    transition: width .3s ease-in-out; 
-}
-.header_inner .header_main_nav .header_nav li a:hover::after {
-    opacity: 1;
-    width: 100%;
-    translate: 0px 0px;
-    left: 0;
-}
-.header_inner .header_main_nav .header_nav li a:not(:hover)::after {
-    opacity: 1;
-    width: 0;
-    translate: 65px 0px;
-    transition: all .3s ease-in-out; 
-}
-.header_inner .header_main_nav .book-btn{
-    margin: auto;
-}
 @media (width>=0px) {
     .header_inner .header_main_nav .book-btn{
         padding: 0px 60px 0px 0px;
     } 
 }
+
+/* ---------------------------------------------------- */
+@media (width<=768px) {
+    header{
+        max-width: 768px;
+        position: relative;
+        margin: auto;
+    }
+    .header_inner{
+        z-index: 1;
+        position: absolute;
+        top:0;
+        width: 100%;
+        margin:auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header_inner .header_logo{
+        max-width: 333px;
+        margin-right:auto;
+        padding: 22px 0px 20px 70px;
+    } 
+    .header_inner .header_main_nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header_inner .header_main_nav .header_nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+    }   
+    .header_main_nav .header_nav .ham{
+        order: 1;
+        z-index: 6;
+
+    }
+    .header_main_nav .header_nav .ham .bar{
+        display: block;
+        width: 35px;
+        height: 4px;
+        background-color: #fff;
+        margin: 6px 0px;
+        border-radius: 16px;
+    }
+    .header_inner .header_main_nav .header_nav .menu-items{
+        width: 100%;
+        list-style: none;
+        gap: 16px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        position: fixed;
+        left: 0;
+        top: 20%;
+        background-color: #4F7937;
+    }
+    .header_inner .header_main_nav .header_nav .menu-items.open{
+        opacity: 1;
+        transition: all 0.3s ease;
+        /* display: block; */
+        /* width: 768px; */
+    }
+    .header_inner .header_main_nav .header_nav li{
+        margin: 20px auto;
+
+    }
+    .header_inner .header_main_nav .header_nav li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .header_inner .header_main_nav .book-btn a{
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 28px;
+        background-color: rgba(255, 255, 255, 0.2); 
+        padding: 14px 16px;
+        margin: auto auto auto 16px;
+        transition: all .2s ease-in;
+        display: none;
+    }
+    .header_inner .header_main_nav .book-btn a:hover{
+        background-color: #FDD340;
+        color: #35311E;
+        font-weight: 600;
+    }
+    .header_inner .header_main_nav .book-btn a:not(:hover){
+        background-color: rgba(255, 255, 255, 0.2); 
+        color: #fff;
+        font-weight: 500;
+    }
+    .header_banner{
+        position: relative;
+    }
+    .header_banner .desktop{display: none;}
+    .header_banner .banner_container{
+        position: absolute;
+        bottom:10%;
+        left: 5.5%;
+    }
+    .header_banner .banner_container .banner_content h1{
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+        text-shadow: #35311E 3px 4px 7px;
+        letter-spacing: 2px; 
+    }
+    .header_banner .banner_container .banner_content a{
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 12px;
+        padding: 1px 6px 3px 6px;
+        font-size: 28px;
+    }
+}
+/* ---------------------------------------------------- */
+@media (width>=1200px) {
+    header{
+        max-width: 1920px;
+        position: relative;
+        margin: auto;  
+    }
+    .header_inner{
+        z-index: 1;
+        position: absolute;
+        top:0;
+        width: 100%;
+        margin:auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header_inner .header_logo{
+        max-width: 333px;
+        margin-right:auto;
+        padding: 22px 0px 20px 70px;
+    } 
+    .header_inner .header_logo img{
+        width: 100%;
+        vertical-align: middle;
+    }
+    .header_inner .header_main_nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header_inner .header_main_nav .header_nav{
+        display: flex;
+    }
+    .header_inner .header_main_nav .header_nav ul{
+        list-style: none;
+        gap: 16px;
+        display: flex;
+    }
+    .header_inner .header_main_nav .header_nav li{
+        margin: auto;
+        padding: 0px 20px 0px 0px;
+    }
+    .header_inner .header_main_nav .header_nav li a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 17px;
+        font-weight: 500;
+        position: relative;
+    }
+    .header_inner .header_main_nav .header_nav li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background-color: #ffffff;
+        opacity: 0;
+        transition: width .3s ease-in-out; 
+    }
+    .header_inner .header_main_nav .header_nav li a:hover::after {
+        opacity: 1;
+        width: 100%;
+        translate: 0px 0px;
+        left: 0;
+    }
+    .header_inner .header_main_nav .header_nav li a:not(:hover)::after {
+        opacity: 1;
+        width: 0;
+        translate: 65px 0px;
+        transition: all .3s ease-in-out; 
+    }
+    .header_inner .header_main_nav .book-btn{
+        margin: auto;
+    }
+    .header_inner .header_main_nav .book-btn a{
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 28px;
+        background-color: rgba(255, 255, 255, 0.2); 
+        padding: 14px 16px;
+        margin: auto auto auto 16px;
+        transition: all .2s ease-in;
+    }
+    .header_inner .header_main_nav .book-btn a:hover{
+        background-color: #FDD340;
+        color: #35311E;
+        font-weight: 600;
+    }
+    .header_inner .header_main_nav .book-btn a:not(:hover){
+        background-color: rgba(255, 255, 255, 0.2); 
+        color: #fff;
+        font-weight: 500;
+        transition: all .3s;
+    }
+    .header_banner{
+        position: relative;
+        border-radius: 0 0 40px 40px;
+        overflow: hidden;
+    }
+    .header_banner img{
+        margin: 0 auto;
+    }
+    .header_banner .phone{
+        display: none;
+    }
+    .header_banner .banner_container{
+        position: absolute;
+        top: 37%;
+        left: 15%;
+    }
+    .header_banner .banner_container .banner_content h1{
+        color: #fff;
+        font-size: 58px;
+        font-weight: 600;
+        text-shadow: #35311E 3px 4px 7px;
+        letter-spacing: 2px; 
+    }
+    .header_banner .banner_container .banner_content a{
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 40px;
+        padding: 3px 16px 6px 16px;
+        font-size: 22px;
+    }
+}
+/* ---------------------------------------------------- */
 @media (width>=1400px) {
     .header_inner .header_main_nav .book-btn{
         margin: auto;
         padding: 0px 45px 0px 15px;
     } 
-}
-.header_inner .header_main_nav .book-btn a{
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 28px;
-    background-color: rgba(255, 255, 255, 0.2); 
-    padding: 14px 16px;
-    margin: auto auto auto 16px;
-    transition: all .2s ease-in;
-}
-.header_inner .header_main_nav .book-btn a:hover{
-    background-color: #FDD340;
-    color: #35311E;
-    font-weight: 600;
-}
-.header_inner .header_main_nav .book-btn a:not(:hover){
-    background-color: rgba(255, 255, 255, 0.2); 
-    color: #fff;
-    font-weight: 500;
-    transition: all .3s;
-}
-.header_banner{
-    position: relative;
-}
-.header_banner img{
-    width: 100%;
-    vertical-align: middle;
-    margin: 0 auto;
-    border-radius: 0 0 40px 40px;
-}
-.header_banner .banner_container{
-    position: absolute;
-    top: 37%;
-    left: 15%;
-}
-.header_banner .banner_container .banner_content h1{
-    color: #fff;
-    font-size: 58px;
-    font-weight: 600;
-    text-shadow: #35311E 3px 4px 7px;
-    letter-spacing: 2px; 
-}
-.header_banner .banner_container .banner_content a{
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 40px;
-    padding: 3px 16px 6px 16px;
-    font-size: 22px;
 }

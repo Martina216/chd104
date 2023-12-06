@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/system.css">
     <link rel="stylesheet" href="./css/footer_v02.css">
+    <!-- <link rel="stylesheet" href="./css/main_menu.css"> -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/content_activities.css">
     <link rel="stylesheet" href="./css/content_feedback.css">
     <link rel="stylesheet" href="./css/content_map.css">
     <link rel="stylesheet" href="./css/content_faqs.css">
-    <link rel="stylesheet" href="./css/content_price.css">
+    <!-- <link rel="stylesheet" href="./css/content_price.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
     <link rel="icon" href="./img/web_icon.ico" type="image/x-icon">
@@ -28,7 +29,12 @@
             </div>
             <div class="header_main_nav">
                 <div class="header_nav">
-                    <ul>
+                    <div class="ham" onclick="toggleMenu()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="menu-items">
                         <li><a href="./activities_page.html"><span class="zh-tw">熱門活動</span></a></li>
                         <li><a href="./locations_page.html"><span class="zh-tw">活動地點</span></a></li>
                         <li><a href="./groups_page.html"><span class="zh-tw">團體方案</span></a></li>
@@ -42,7 +48,8 @@
             </div>
         </div>
         <div class="header_banner">
-            <img src="./img/index/header-banner.webp" alt="森林學校看板" aria-activedescendant="">
+            <img src="./img/index/header-banner.webp" alt="森林學校看板" aria-activedescendant="" class="desktop">
+            <img src="./img/index/header-banner-sm.webp" alt="" class="phone">
             <div class="banner_container">
                 <div class="banner_content">
                     <h1>
@@ -129,7 +136,7 @@
             </div>
         </section>
 
-        <section class="content_map">
+        <!-- <section class="content_map">
             <div class="map_menu">
                 <a href="">陽明山</a>
                 <a href="">明池</a>
@@ -326,20 +333,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="feedback_box">
-                    <div class="content_text">
-                        <div class="feedback-msg">
-                            <p>
-                                <span>"我和朋友在陽明山森林學校度過了一段美好的時光！</span>
-                                <span>真是物超所值！</span>
-                                <span>我們的指導董董非常迷人和專業！"</span>
-                            </p>
-                        </div>
-                        <div class="feedback-name">
-                            <span>卡蜜拉</span>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
 
@@ -387,9 +380,9 @@
                     <span></span>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer>
+    <!-- <footer>
         <div class="footer_container">
             <div class="footer_information">
                 <div class="footer_office-information">
@@ -448,6 +441,13 @@
             <span>TOP</span>
             <a href="#top"></a>
         </div>
-    </footer>
+    </footer> -->
+    <script>
+        function toggleMenu() {
+        const menu = document.querySelector('.menu-items');
+        menu.classList.toggle('open');
+        }
+        
+    </script>
 </body>
 </html>
