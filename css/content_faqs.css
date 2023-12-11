@@ -1,112 +1,199 @@
-.content_faq{
-    max-width: 800px;
-    width: 750px;
-    margin: auto;
-    letter-spacing: .8px;
-    color: #35311E;
-    line-height: 1.3;
-    padding: 0px 0px 30px;
-    position: relative;
+@media (width<=768px) {
+    .content_faq{
+        max-width: 768px;
+        margin: auto;
+        letter-spacing: .8px;
+        color: #35311E;
+        line-height: 1.3;
+        padding: 0px 0px 30px;
+        position: relative;
+    }
+    .content_faq .faq_container{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+    }
+    .content_faq .faq_container .faq_title{
+        padding: 20px 0px 24px;
+        border-bottom: 1px solid #bbb;
+    }
+    .content_faq .faq_container .faq_title span{
+        font-weight: 500;
+        font-size: 26px;
+        color: #5B5230;
+    }
+    .content_faq .faq_container .faq_text .faq_box{
+        border-bottom: 1px solid #bbb;
+    }
+    .content_faq .faq_container .faq_text .faq_box .question{
+        width: 100%;
+        padding: 24px 0px 0px 0px;
+    }
+    .content_faq .faq_container .faq_text .faq_box .question span{
+        font-size: 18px;
+    }
+    .content_faq .faq_container .faq_text .faq_box .answer{
+        width: 100%;
+        padding: 10px 0px 18px 0px;
+    }
+    .content_faq .faq_container .faq_text .faq_box .answer span{
+    }
+    .content_faq .faq_container .faq_more{
+        float: right;
+        display: flex;
+        position: relative;
+    }
+    .content_faq .faq_container .faq_more:hover i{
+        translate: 0px 0px;
+        color: #4F7937;
+        transition: all .2s ease-in-out;
+    }
+    .content_faq .faq_container .faq_more:hover span{
+        color: #4F7937;
+        transition: all .2s ease-in-out;
+    }
+    .content_faq .faq_container .faq_more:not(:hover) i{
+        translate: -10px 0px;
+        color: #cfcfcf;
+        transition: all .2s ease-in-out;
+    }
+    .content_faq .faq_container .faq_more:not(:hover) span{
+        color: #b4b4b4;
+        transition: all .2s ease-in-out;
+    }
+    .content_faq .faq_container .faq_more .faq_more_icon{
+        font-size:35px;
+        padding: 20px 10px;
+    }
+    .content_faq .faq_container .faq_more i{
+        translate: -10px 0px;
+        color: #cfcfcf;
+        font-size:100%;
+    }
+    .content_faq .faq_container .faq_more span{
+        color: #b4b4b4;
+        font-size: 16px;
+        align-self: center;
+    }
+    .content_faq .faq_container .faq_more a{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+    }
+    .faq_bgc{display: none;}
 }
-.content_faq .faq_container{
-    width: 100%;
-}
-.content_faq .faq_container .faq_title{
-    padding: 20px 0px 24px;
-    border-bottom: 1px solid #bbb;
-}
-.content_faq .faq_container .faq_title span{
-    font-weight: 500;
-    font-size: 26px;
-    color: #5B5230;
-}
-.content_faq .faq_container .faq_text{
-    display: flex;
-    flex-direction: column;
-}
-.content_faq .faq_container .faq_text .faq_box{
-    border-bottom: 1px solid #bbb;
-}
-.content_faq .faq_container .faq_text .faq_box .question{
-    width: 750px;
-    padding: 24px 0px 0px 0px;
-}
-.content_faq .faq_container .faq_text .faq_box .question span{
-    font-size: 18px;
-}
-.content_faq .faq_container .faq_text .faq_box .answer{
-    width: 750px;
-    padding: 10px 0px 18px 0px;
-}
-.content_faq .faq_container .faq_text .faq_box .answer span{
-    font-size: 16px;
-}
-.content_faq .faq_container .faq_more{
-    display: flex;
-    justify-content: flex-end;
-}
-.content_faq .faq_container .faq_more:hover i{
-    translate: 0px 0px;
-    color: #4F7937;
-    transition: all .2s ease-in-out;
-}
-.content_faq .faq_container .faq_more:hover span{
-    color: #4F7937;
-    transition: all .2s ease-in-out;
-}
-.content_faq .faq_container .faq_more:not(:hover) i{
-    translate: -10px 0px;
-    color: #cfcfcf;
-    transition: all .2s ease-in-out;
-}
-.content_faq .faq_container .faq_more:not(:hover) span{
-    color: #b4b4b4;
-    transition: all .2s ease-in-out;
-}
-.content_faq .faq_container .faq_more .faq_more_icon{
-    font-size:35px;
-    padding: 20px 10px;
-}
-.content_faq .faq_container .faq_more i{
-    translate: -10px 0px;
-    color: #cfcfcf;
-    font-size:100%;
-}
-.content_faq .faq_container .faq_more span{
-    color: #b4b4b4;
-    font-size: 16px;
-    align-self: center;
-}
-.content_faq .faq_container .faq_more a{
-    position: absolute;
-    width: 200px;
-    height: 80px;
-    left: 75%;
-}
-.faq_bgc{
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    width: 630px;
-    height: 630px;
-    background-color: #ECFBCA;
-    border-radius: 50%; 
-    z-index: -2;
-    bottom: -40%;
-    left: -20%;
-}
-.faq_bgc .bgc_block{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.faq_bgc .bgc_block span{
-    display: block;
-    width: 400px;
-    height: 400px;
-    background-color: #ECFBCA;
-    border-radius: 50%; 
-    position: absolute;
-    left: 70%;
-    bottom: 48%;
+@media (width>768px) {
+    .content_faq{
+        max-width: 800px;
+        width: 750px;
+        margin: auto;
+        letter-spacing: .8px;
+        color: #35311E;
+        line-height: 1.3;
+        padding: 0px 0px 30px;
+        position: relative;
+    }
+    .content_faq .faq_container{
+        width: 100%;
+    }
+    .content_faq .faq_container .faq_title{
+        padding: 20px 0px 24px;
+        border-bottom: 1px solid #bbb;
+    }
+    .content_faq .faq_container .faq_title span{
+        font-weight: 500;
+        font-size: 26px;
+        color: #5B5230;
+    }
+    .content_faq .faq_container .faq_text{
+        display: flex;
+        flex-direction: column;
+    }
+    .content_faq .faq_container .faq_text .faq_box{
+        border-bottom: 1px solid #bbb;
+    }
+    .content_faq .faq_container .faq_text .faq_box .question{
+        width: 750px;
+        padding: 24px 0px 0px 0px;
+    }
+    .content_faq .faq_container .faq_text .faq_box .question span{
+        font-size: 18px;
+    }
+    .content_faq .faq_container .faq_text .faq_box .answer{
+        width: 750px;
+        padding: 10px 0px 18px 0px;
+    }
+    .content_faq .faq_container .faq_text .faq_box .answer span{
+        font-size: 16px;
+    }
+    .content_faq .faq_container .faq_more{
+        float: right;
+        display: flex;
+    }
+    .content_faq .faq_container .faq_more:hover i{
+        translate: 0px 0px;
+        color: #4F7937;
+        transition: all .2s ease-in-out;
+    }
+    .content_faq .faq_container .faq_more:hover span{
+        color: #4F7937;
+        transition: all .2s ease-in-out;
+    }
+    .content_faq .faq_container .faq_more:not(:hover) i{
+        translate: -10px 0px;
+        color: #cfcfcf;
+        transition: all .2s ease-in-out;
+    }
+    .content_faq .faq_container .faq_more:not(:hover) span{
+        color: #b4b4b4;
+        transition: all .2s ease-in-out;
+    }
+    .content_faq .faq_container .faq_more .faq_more_icon{
+        font-size:35px;
+        padding: 20px 10px;
+    }
+    .content_faq .faq_container .faq_more i{
+        translate: -10px 0px;
+        color: #cfcfcf;
+        font-size:100%;
+    }
+    .content_faq .faq_container .faq_more span{
+        color: #b4b4b4;
+        font-size: 16px;
+        align-self: center;
+    }
+    .content_faq .faq_container .faq_more a{
+        position: absolute;
+        width: 200px;
+        height: 80px;
+        left: 75%;
+    }
+    .faq_bgc{
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        width: 630px;
+        height: 630px;
+        background-color: #ECFBCA;
+        border-radius: 50%; 
+        z-index: -2;
+        bottom: -40%;
+        left: -20%;
+    }
+    .faq_bgc .bgc_block{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .faq_bgc .bgc_block span{
+        display: block;
+        width: 400px;
+        height: 400px;
+        background-color: #ECFBCA;
+        border-radius: 50%; 
+        position: absolute;
+        left: 70%;
+        bottom: 48%;
+    }    
 }

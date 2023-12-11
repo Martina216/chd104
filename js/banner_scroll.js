@@ -1,3 +1,4 @@
+/*banner圓角滑動*/
 const imageWrapper = document.getElementById('imageWrapper');
 const scrollImage = document.getElementById('scrollImage');
 
@@ -16,6 +17,8 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', function() {
-    onScroll();
+    if (window.innerWidth > 768) {
+        onScroll();
+    }
 });
 

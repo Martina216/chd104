@@ -31,11 +31,6 @@
         height: 130px;
     } 
 }
-@media (width>=1400px) {
-    .footer_information .footer_dictionary ul{
-        height: 150px;
-    } 
-}
 @media (width<=768px) {
     footer{
         margin: 120px auto 0px;
@@ -58,10 +53,10 @@
         flex-direction: column;
         flex-wrap: wrap;
         margin: 0px 50px;
-        line-height: 1.5;
+        line-height: 1.6;
     }
     .footer_container .footer_information .footer_dictionary{
-        padding: 5px 0px;
+        padding: 5px 0px 20px;
         margin: 0px 50px;
         order: -1;
     }
@@ -70,7 +65,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         height: 160px;
-        gap: 10px;
+        gap: 1rem;
     }
     .footer_container .footer_information .footer_dictionary a{color: #fff;}
     .footer_container .footer_information .footer_logo-area{
@@ -79,8 +74,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-end;
-        margin: 40px 20px 20px 20px;
-        padding: 0 0 40px 0;
+        margin: 40px 20px 20px;
+        padding: 0 0 45px 0;
         border-bottom: 1px solid #fff;
     }
     .footer_container .footer_information .footer_logo-area .brand-logo{
@@ -104,9 +99,7 @@
         margin: 25px 50px;
         font-size: 12px;
     }
-    .footer_container .footer_information .top-btn i{
-        display: none;
-    }
+    .top-btn{display: none;}
 }
 @media (width>768px) {
     footer{
@@ -118,6 +111,10 @@
         box-sizing: border-box;
         z-index: 1;
         position: relative;
+        font-size: 13px;
+    }
+    footer a{
+        font-size: 13px;
     }
     .footer_container {
         border-radius: 29px 29px 0px 0px;
@@ -140,23 +137,6 @@
     }
     .footer_container .footer_information .footer_office-information span{
         padding: 5px 0px 5px 0px;
-    }
-    
-    @media (width>=0px) {
-        footer{
-            font-size: 13px;
-        }    
-        footer a{
-            font-size: 13px;
-        }    
-    }
-    @media (width>=1400px) {
-        footer {
-            font-size: 16px;
-        }
-        footer a{
-            font-size: 16px;
-        } 
     }
     .footer_container.footer_information .footer_dictionary{
         display: flex;
@@ -231,5 +211,15 @@
         height: 100%;
         position: absolute;
     }
-
+}
+@media (width>=1400px) {
+    footer {
+        font-size: 16px;
+    }
+    footer a{
+        font-size: 16px;
+    } 
+    .footer_information .footer_dictionary ul{
+        height: 150px;
+    } 
 }

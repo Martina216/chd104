@@ -1,3 +1,4 @@
+/*banner文字漸入*/
 const h1Element = document.getElementById('fade-in-text');
 const spans = h1Element.getElementsByTagName('span');
 
