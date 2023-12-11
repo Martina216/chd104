@@ -6,7 +6,6 @@
     max-width:750px;
     margin: 0px auto 30px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -64,3 +63,6 @@
     width: 100%;
     border-radius: 40px;
 }
+/* ---------------------------------------------------- */
+@media (width<=768px) {}
+@media (width>768px) {}

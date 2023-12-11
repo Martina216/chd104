@@ -47,17 +47,17 @@
                 </div>
             </div>
         </div>
-        <div class="header_banner">
-            <img src="./img/index/header-banner.webp" alt="森林學校看板" aria-activedescendant="" class="desktop">
-            <img src="./img/index/header-banner-sm.webp" alt="" class="phone">
+        <div class="header_banner" id="imageWrapper">
+            <img src="./img/index/header-banner.webp" alt="森林學校看板" class="desktop" id="scrollImage">
+            <img src="./img/index/header-banner-sm.webp" alt="森林學校看板" class="phone">
             <div class="banner_container">
-                <div class="banner_content">
+                <div class="banner_content" id="fade-in-text">
                     <h1>
                         <span>探索</span>
                         <span>挑戰</span>
                         <span>樂趣</span>
-                    </h1>
-                    <a href="./book_page.html" id="banner_btn"><span>馬上安排</span></a>
+                    </h1>                
+                    <a href="./book_page.html" id="banner-btn"><span>馬上安排</span></a>
                 </div>
             </div>
         </div>
@@ -148,8 +148,8 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.249035944548!2d121.22244777705498!3d24.957640341358996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1700832120420!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-        </section>
-
+        </section> -->
+<!-- 
         <section class="content_price" id="price">
             <div class="price_container">
                 <div class="price_area">
@@ -382,7 +382,7 @@
             </div>
         </section> -->
     </main>
-    <!-- <footer>
+    <footer>
         <div class="footer_container">
             <div class="footer_information">
                 <div class="footer_office-information">
@@ -441,12 +441,17 @@
             <span>TOP</span>
             <a href="#top"></a>
         </div>
-    </footer> -->
+    </footer>
     <script>
         function openMenu() {
         const menu = document.querySelector('.menu-items');
         menu.classList.toggle('open');
         }
     </script>
+    <script src="./js/banner_scroll.js"></script>
+    <script src="./js/text_show.js"></script>
+    <script src="./js/load.js"></script>
+    
+
 </body>
 </html>
