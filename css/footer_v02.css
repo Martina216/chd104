@@ -54,6 +54,7 @@
         flex-wrap: wrap;
         margin: 0px 50px;
         line-height: 1.6;
+        letter-spacing: 0.5px;
     }
     .footer_container .footer_information .footer_dictionary{
         padding: 5px 0px 20px;
@@ -98,6 +99,7 @@
     .footer_container .footer_information .copyright{
         margin: 25px 50px;
         font-size: 12px;
+        line-height: 1.5;
     }
     .top-btn{display: none;}
 }
