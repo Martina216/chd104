@@ -2,20 +2,6 @@
     display: flex;
     justify-content: flex-end;
 }
-.activities-content .activities_box .actv_information .book-btn a{
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 2rem;
-    background-color: #788e6d;
-    padding: 5px 12px;
-    transition: all .2s ease-in;
-}
-.activities-content .activities_box .actv_information .book-btn a:hover{
-    background-color: #4F7937;
-    color: #fff;
-}
 @media (width<=768px) {
     .activities-content{
         max-width: 768px;
@@ -63,10 +49,12 @@
         width: 800px;
         margin: auto;
         background-color: #F5F8ED;
-        border-radius: 0 0 1rem 1rem;
+        border-radius: 1rem;
+        padding: 0 0 20px;
     }
     .activities-content .activities_box .actv_img{
         width: 345px;
+        height: 250px;
         overflow: hidden;
         border-radius: 1rem 1rem 0 0;
         margin: auto;
@@ -75,14 +63,24 @@
         padding: 0px 20px;
         margin: auto;
     }
+    .activities-content .activities_box .actv_information .book-btn a{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        padding: 10px 16px;
+        background-color: #4F7937;
+        border-radius: 2rem;
+    }
     .activities-content .activities_box .actv_information .actv_title{
         font-size: 28px;
         padding: 8px 0 4px;
     }
     .activities-content .activities_box .actv_information .actv_detail{
-        margin: 10px 0;
+        margin: .2rem 0;
         display: flex;
         justify-content: space-between;
+        margin: 1rem auto;
     }
     .activities-content .activities_box .actv_information .actv_detail span:nth-child(2){
         font-size: 22px;
@@ -96,7 +94,7 @@
         flex-wrap: wrap;
         width: 300px;
         justify-content: space-between;
-        margin: 0px 0px 16px;
+        margin: 1rem auto;
     }
     .activities-content .activities_box .actv_information .actv_tag {
         width: 70px;
@@ -105,10 +103,6 @@
         color: #5B5230;
         margin:4px 0;
         gap: 4px;
-    }
-    .activities-content .activities_box .actv_information .book-btn a{
-        color: #4F7937;
-        float:right;
     }
     .more_box {
         display: flex;
@@ -120,10 +114,6 @@
     }
     .more_box .more_img{
         width: 650px;
-    }
-    .more_box .more_img img{
-        width: 100%;
-        vertical-align: middle;
     }
     .more_box .more_information{
         display: flex;
@@ -312,6 +302,20 @@
         box-sizing: border-box;
         padding: 0px 20px;
     }
+    .activities-content .activities_box .actv_information .book-btn a{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 2rem;
+        background-color: #788e6d;
+        padding: 5px 12px;
+        transition: all .2s ease-in;
+    }
+    .activities-content .activities_box .actv_information .book-btn a:hover{
+        background-color: #4F7937;
+        color: #fff;
+    }
     .activities-content .activities_box .actv_information .actv_title{
         font-size: 28px;
     }
@@ -345,10 +349,6 @@
         border-radius: 20px;
         overflow: hidden;
     }
-    .activities-content .activities_box .actv_img img{
-        width: 100%;
-        vertical-align: middle;
-    }
     .more_box {
         display: flex;
         flex-wrap: wrap;
@@ -358,7 +358,6 @@
     }
     .more_box .more_img{
         width: 650px;
-        width: 100vh;
     }
     .more_box .more_information{
         display: flex;
