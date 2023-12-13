@@ -114,7 +114,7 @@
     .header_banner .desktop{display: none;}
     .header_banner .banner_container{
         position: absolute;
-        bottom:10%;
+        bottom:14%;
         left: 5.5%;
     }
     .header_banner .banner_container .banner_content h1{
@@ -237,7 +237,6 @@
     }
     .header_banner img{
         margin: 0 auto;
-        overflow: scroll;
         filter: brightness(90%);
     }
     .header_banner .phone{
@@ -276,3 +275,5 @@
         padding: 0px 45px 0px 15px;
     } 
 }
+
+/* ---------------------------------------------------- */

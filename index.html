@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/content_feedback.css">
     <link rel="stylesheet" href="./css/content_map.css">
     <link rel="stylesheet" href="./css/content_faqs.css">
-    <!-- <link rel="stylesheet" href="./css/content_price.css"> -->
+    <link rel="stylesheet" href="./css/content_price.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
     <link rel="icon" href="./img/web_icon.ico" type="image/x-icon">
@@ -87,6 +87,7 @@
                                     </span>
                                 </div>
                             </div>
+                            <a href="./activities_page.html#high-adv"></a>
                         </div>
                         <div class="card">
                             <div class="title">樹頂挑戰</div>
@@ -103,6 +104,7 @@
                                     </span>
                                 </div>
                             </div>
+                            <a href="./activities_page.html#treetop"></a>
                         </div>
                         <div class="card">
                             <div class="title">林間滑索</div>
@@ -117,6 +119,7 @@
                                     <span>穿越樹梢間，感受驚險刺激。挑戰高空飛行，獲得自由飄逸的暢快感。</span>
                                 </div>
                             </div>
+                            <a href="./activities_page.html#high-rope"></a>
                         </div>
                         <div class="card">
                             <div class="title">體驗課程</div>
@@ -125,20 +128,36 @@
                             </div>
                             <div class="content">
                                 <div class="activities_icon">
-                                    <i class="fa-solid fa-circle-arrow-right" aria-label="support-aarow-for-people"></i>
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
                                 </div>
                                 <div class="text">
                                     <span>探索大自然的奧秘與美麗。獲得豐富的成就與挑戰自我的體驗！</span>
                                 </div>
                             </div>
+                            <a href="./activities_page.html#ec"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="content_map">
+            <div class="map_menu-phone">
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()" class="dropbtn">
+                        <span>活動地點</span>
+                        <i class="fa-solid fa-angle-down i"></i>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="">陽明山</a>
+                        <a href="">明池</a>
+                        <a href="">棲蘭</a>
+                        <a href="">南投</a>
+                        <a href="">高雄六龜</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- <section class="content_map">
-            <div class="map_menu">
+            <div class="map_menu-desk">
                 <a href="">陽明山</a>
                 <a href="">明池</a>
                 <a href="">棲蘭</a>
@@ -149,8 +168,8 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.249035944548!2d121.22244777705498!3d24.957640341358996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1700832120420!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-        </section> -->
-<!-- 
+        </section>
+
         <section class="content_price" id="price">
             <div class="price_container">
                 <div class="price_area">
@@ -158,15 +177,15 @@
                         <div class="first row">
                             <div class="first card">
                                 <div class="col-md-3">
-                                    <div class="p_border">
-                                        <div class="p_text">
-                                            <div class="p_p">
+                                    <div class="border">
+                                        <div class="text">
+                                            <div class="p">
                                                 <span class="currency">NT</span><span class="price">1800</span>
                                             </div>
-                                            <div class="p_category">
+                                            <div class="category">
                                                 <span >家庭票</span>
                                             </div>
-                                            <div class="p_detail">
+                                            <div class="detail">
                                                 <span>2張普通票</span>
                                                 <br>
                                                 <span>2張孩童票</span>
@@ -174,15 +193,15 @@
                                             <i class="fa-solid fa-circle-arrow-right"></i>
                                         </div>
                                     </div>
-                                    <div class="p_border"  title="需出示相關證件">
-                                        <div class="p_text">
-                                            <div class="p_p">
+                                    <div class="border"  title="需出示相關證件">
+                                        <div class="text">
+                                            <div class="p">
                                                 <span class="currency">NT</span><span class="price">500</span>
                                             </div>
-                                            <div class="p_category">
+                                            <div class="category">
                                                 <span>優待票</span>
                                             </div>
-                                            <div class="p_detail">
+                                            <div class="detail">
                                                 <span>合作企業</span>
                                                 <br>
                                                 <span>特約學校</span>
@@ -197,21 +216,21 @@
                                     <div class="second container">
                                         <div class="second row">
                                             <div class="col-md-12">
-                                                <div class="p_img">
+                                                <div class="img">
                                                     <img src="./img/index/forest_top_photo.webp" alt="forest-top-photo-with-green-and-yellow-trees"> 
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="col-md-4">
-                                                    <div class="p_border">
-                                                        <div class="p_text">
-                                                            <div class="p_p">
+                                                    <div class="border">
+                                                        <div class="text">
+                                                            <div class="p">
                                                                 <span class="currency">NT</span><span class="price">600</span>
                                                             </div>
-                                                            <div class="p_category">
+                                                            <div class="category">
                                                                 <span>普通票</span>
                                                             </div>
-                                                            <div class="p_detail">
+                                                            <div class="detail">
                                                                 <span>16歲以上</span>
                                                             </div>
                                                             <i class="fa-solid fa-circle-arrow-right"></i>
@@ -219,15 +238,15 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <div class="p_border">
-                                                        <div class="p_text">
-                                                            <div class="p_p">
+                                                    <div class="border">
+                                                        <div class="text">
+                                                            <div class="p">
                                                                 <span class="currency">NT</span><span class="price">450</span>
                                                             </div>
-                                                            <div class="p_category">
+                                                            <div class="category">
                                                                 <span>孩童票</span>
                                                             </div>
-                                                            <div class="p_detail">
+                                                            <div class="detail">
                                                                 <span>8-16歲</span>
                                                             </div>
                                                             <i class="fa-solid fa-circle-arrow-right"></i>
@@ -235,15 +254,15 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <div class="p_border">
-                                                        <div class="p_text">
-                                                            <div class="p_p">
+                                                    <div class="border">
+                                                        <div class="text">
+                                                            <div class="p">
                                                                 <span class="currency">NT</span><span class="price">300</span>
                                                             </div>
-                                                            <div class="p_category">
+                                                            <div class="category">
                                                                 <span>學齡票</span>
                                                             </div>
-                                                            <div class="p_detail">
+                                                            <div class="detail">
                                                                 <span>3-7歲</span>
                                                             </div>
                                                             <i class="fa-solid fa-circle-arrow-right"></i>
@@ -264,12 +283,82 @@
                     <div class="bgc_block2">
                     </div>
                     <div class="bgc_block3">
-                            <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="price_container-phone">
+                <div class="price_area">
+                    <div class="border">
+                        <div class="text">
+                            <div class="p">
+                                <span class="currency">NT</span><span class="price">1800</span>
+                            </div>
+                            <div class="category">
+                                <span>家庭票</span>
+                            </div>
+                            <div class="detail">
+                                <span>2張普通票</span>
+                                <span>2張孩童票</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border"  title="需出示相關證件">
+                        <div class="text">
+                            <div class="p">
+                                <span class="currency">NT</span><span class="price">500</span>
+                            </div>
+                            <div class="category">
+                                <span>優待票</span>
+                            </div>
+                            <div class="detail">
+                                <span>合作企業</span>
+                                <span>特約學校</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <div class="text">
+                            <div class="p">
+                                <span class="currency">NT</span><span class="price">600</span>
+                            </div>
+                            <div class="category">
+                                <span>普通票</span>
+                            </div>
+                            <div class="detail">
+                                <span>16歲以上</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <div class="text">
+                            <div class="p">
+                                <span class="currency">NT</span><span class="price">450</span>
+                            </div>
+                            <div class="category">
+                                <span>孩童票</span>
+                            </div>
+                            <div class="detail">
+                                <span>8-16歲</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <div class="text">
+                            <div class="p">
+                                <span class="currency">NT</span><span class="price">300</span>
+                            </div>
+                            <div class="category">
+                                <span>學齡票</span>
+                            </div>
+                            <div class="detail">
+                                <span>3-7歲</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>-->
+            </div>
+        </section>
 
         <section class="content_feedback">
             <div class="feedback_container">
@@ -514,6 +603,7 @@
     <script src="./js/menu_show.js"></script>
     <script src="./js/banner_scroll.js"></script>
     <script src="./js/text_show.js"></script>
+    <script src="./js/show_map.js"></script>
     
 </body>
 </html>

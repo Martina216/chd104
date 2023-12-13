@@ -52,12 +52,12 @@
     .content_faq .faq_container .faq_text .faq_box .question{width: 100%;}
     .content_faq .faq_container .faq_text .faq_box .answer{width: 100%;}
     .content_faq .faq_container .faq_more{position: relative;}
-    .content_faq .faq_container .faq_more:checked i{
+    .content_faq .faq_container .faq_more:active i{
         translate: 0px 0px;
         color: #4F7937;
         transition: all .2s ease-in-out;
     }
-    .content_faq .faq_container .faq_more:checked span{
+    .content_faq .faq_container .faq_more:active span{
         color: #4F7937;
         transition: all .2s ease-in-out;
     }

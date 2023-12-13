@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/system.css">
-    <link rel="stylesheet" href="./css/main_nav.css">
+    <link rel="stylesheet" href="./css/main_menu.css">
     <link rel="stylesheet" href="./css/footer_v02.css">
     <link rel="stylesheet" href="./css/activities_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,31 +15,36 @@
     <link rel="icon" href="./img/web_icon.ico" type="image/x-icon">
 </head>
 <body>
-    <section class="theforest-header" id="top">
-        <div class="header">
-            <div class="header_inner">
-                <div class="header_logo">
-                    <a href="./index.html">
-                    <img src="./img/logo/theforestschool_logo_g.svg" alt="the-forest-school-logo">
-                    </a>
+    <header id="top">
+        <div class="header_inner">
+            <div class="header_logo">
+                <a href="./index.html">
+                <img src="./img/logo/theforestschool_logo_g.svg" alt="the-forest-school-logo">
+                </a>
+            </div>
+            <div class="header_main_nav">
+                <div class="header_nav">
+                    <div class="ham" onclick="showMenu()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="menu-items">
+                        <li><a href="./activities_page.html"><span class="zh-tw">熱門活動</span></a></li>
+                        <li><a href="./locations_page.html"><span class="zh-tw">活動地點</span></a></li>
+                        <li><a href="./groups_page.html"><span class="zh-tw">團體方案</span></a></li>
+                        <li><a href="./about_page.html"><span class="zh-tw">關於我們</span></a></li>
+                        <li><a href="./faqs_page.html"><span class="zh-tw">常見問題</span></a></li>
+                    </ul>
                 </div>
-                <div class="header_main_nav">
-                    <div class="header_nav">
-                        <ul>
-                            <li><a href="./activities_page.html"><span class="zh-tw">熱門活動</span></a></li>
-                            <li><a href="./locations_page.html"><span class="zh-tw">活動地點</span></a></li>
-                            <li><a href="./groups_page.html"><span class="zh-tw">團體方案</span></a></li>
-                            <li><a href="./about_page.html"><span class="zh-tw">關於我們</span></a></li>
-                            <li><a href="./faqs_page.html"><span class="zh-tw">常見問題</span></a></li>
-                        </ul>
-                    </div>
-                    <div class="book-btn">
-                        <a href="./book_page.html"><span class="zh-tw">馬上預約</span></a>
-                    </div>
+                <div class="book-btn">
+                    <a href="./book_page.html"><span class="zh-tw">馬上預約</span></a>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
+
+
     <section class="activities">
         <div class="activities-content">
             <div class="activities_title">
@@ -88,7 +93,9 @@
                                         <span class="actv_tag">明池</span>
                                         <span class="actv_tag">南投</span>
                                         <span class="actv_tag">高雄六龜</span>
-                                        <!-- <span class="actv_tag">南投</span> -->
+                                    </div>
+                                    <div class="book-btn">
+                                        <a href="./book_page.html">馬上預約</a>
                                     </div>
                                 </div>
                             </div>
@@ -101,6 +108,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="card">
+                            <div class="col-12 col-md-6">
+                                <div class="actv_img">
+                                    <img src="./img/actv_page/outward-bound-costa-rica-ropes.jpg">
+                                </div>
+                            </div>
                             <div class="col-12 col-md-6">
                                 <div class="actv_information">
                                     <div class="actv_title">
@@ -129,13 +141,12 @@
                                         <span class="actv_tag">高雄六龜</span>
                                         <!-- <span class="actv_tag">南投</span> -->
                                     </div>
-                                </div>
+                                    <div class="book-btn">
+                                        <a href="./book_page.html">馬上預約</a>
+                                    </div>
+                                </div>   
                             </div>
-                            <div class="col-12 col-md-6">
-                                <div class="actv_img">
-                                    <img src="./img/actv_page/outward-bound-costa-rica-ropes.jpg">
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -182,6 +193,9 @@
                                         <span class="actv_tag">高雄六龜</span>
                                         <!-- <span class="actv_tag">南投</span> -->
                                     </div>
+                                    <div class="book-btn">
+                                        <a href="./book_page.html">馬上預約</a>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -198,6 +212,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="card">
+                            <div class="col-12 col-md-6">
+                                <div class="actv_img">
+                                    <img src="./img/actv_page/kid_forest_course.jpg">
+                                </div>
+                            </div>
                             <div class="col-12 col-md-6">
                                 <div class="actv_information">
                                     <div class="actv_title">
@@ -226,13 +245,12 @@
                                         <span class="actv_tag">高雄六龜</span>
                                         <!-- <span class="actv_tag">南投</span> -->
                                     </div>
+                                    <div class="book-btn">
+                                        <a href="./book_page.html">馬上預約</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6">
-                                <div class="actv_img">
-                                    <img src="./img/actv_page/kid_forest_course.jpg">
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -260,12 +278,14 @@
                         <div class="more_icon">
                             <i class="fa-solid fa-circle-arrow-right"></i>
                         </div>
+                        <a href="./groups_page.html"></a>
                     </div>
                     <div class="more_category">
                         <span>聯絡我們</span>
                         <div class="more_icon">
                             <i class="fa-solid fa-circle-arrow-right"></i>
                         </div>
+                        <a href="./contact_page.html"></a>
                     </div>
                 </div>
                 <div class="color_blk" id="more">
@@ -275,7 +295,7 @@
             </div>
             <div class="sup_blk"></div>
         </div>  
-    </section>
+    </section> 
 
 <footer>
     <div class="footer_container">
@@ -337,6 +357,7 @@
         <a href="#top"></a>
     </div>
 </footer>
+<script src="./js/menu_show.js"></script>
 </body>
 </html>
 
