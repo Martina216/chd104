@@ -110,6 +110,11 @@
     }
     .header_banner{
         position: relative;
+        height: 100vh;
+    }
+    .header_banner img{
+        height: 100%;
+        object-fit: cover;
     }
     .header_banner .desktop{display: none;}
     .header_banner .banner_container{
@@ -135,16 +140,16 @@
 /* ---------------------------------------------------- */
 @media (width>768px) {
     header{
-        max-width: 1920px;
         position: relative;
         margin: auto;  
     }
     .header_inner{
+        width: 100%;
         z-index: 1;
-        position: absolute;
+        position:absolute;
         top:0;
         width: 100%;
-        margin:auto;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -234,8 +239,12 @@
         position: relative;
         border-radius: 0;
         overflow: hidden;
+        height: 100vh;
+        width: 100vw;
     }
     .header_banner img{
+        height: 100%;
+        object-fit: cover;
         margin: 0 auto;
         filter: brightness(90%);
     }
