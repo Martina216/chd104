@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     background: #00000002;
+    cursor: pointer;
 }
 .locations-content .container .row .card_content:hover{
     border: 1px solid #aaa;
@@ -83,4 +84,113 @@
 }
 .locations-content .container .row .card_content .tag .actv_tag:nth-child(6){
     background-color: transparent;
+}
+
+/* ------------------------------------------------------------- */
+
+/*燈箱*/
+.detail_box {
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    width: 100%;
+    height: 100%;
+}
+.detail_box .box{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F4F4F4;
+    border-radius: 2em;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid var(--black);
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hidden{display: none;}
+.detail_box .box .pic{
+    border-radius: 1em;
+    overflow: hidden;
+    width: 58%;
+}
+.detail_box .box .info {
+    box-sizing: border-box;
+    padding:20px 0 20px 20px;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--black);
+}
+.detail_box .box .info .title {
+    display: flex;
+}
+.detail_box .box .info .title .name{font-size: 30px;
+}
+.detail_box .box .info .title .area{
+    padding: 0 2px;
+    font-size: 20px;
+    align-self: flex-end;}
+.detail_box .box .info .detail, .tel{font-size: 18px;}
+.detail_box .box .info .open-time{
+    display: flex;
+    flex-wrap: wrap;
+}
+.detail_box .box .info .open-time .time{
+    font-size: 18px;
+}
+.detail_box .box .info .open-time .warning{
+    align-self: flex-end;
+    font-size: 14px;
+    color: var(--red);
+    padding: 0 1px;
+}
+.detail_box .box .info .tag{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.detail_box .box .info .tag .actv_tag{
+    width: 70px;
+    text-align: center;
+    background-color: var(--light-green);
+    color: var(--light-brown);
+    padding: 4px;
+}
+.detail_box .box .info .more{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.detail_box .box .info .more .map{
+    color: #788e6d;
+    /* background-color:#788e6d; */
+    border-radius: 2em;
+    border: 1.8px solid #788e6d;
+    padding: 10px 12px;
+    font-size: 20px;
+}
+.detail_box .box .info .more .book-btn{
+    color: #fff;
+    background-color:#788e6d;
+    border-radius: 2em;
+    padding: 10px 12px;
+    font-size: 20px;
+}
+/*停止滑動*/
+body {
+    overflow: auto;
+  }
+body.unscroll {
+    overflow: hidden;
 }

@@ -11,6 +11,13 @@ html, body{
     scroll-behavior: smooth;
     font-family:'Noto Sans TC','sans-serif';
     letter-spacing: 1px;
+    --dark-green:#4F7937;
+    --black:#35311E;
+    --red:rgb(255, 138, 138);
+    --nude-green:#A7C398;
+    --light-green:#CCDEA3;
+    --light-brown:#5B5230;
+    --nude-orange:#FFE692;
 }
 a{
     text-decoration: none;

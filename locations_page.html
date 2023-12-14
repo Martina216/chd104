@@ -39,16 +39,16 @@
         </div>
     </header>
     <section class="locations">
-        <div class="locations-content" aria-activedescendant="locations1">
+        <div class="locations-content">
             <div class="locations_title">
                 <span>活動地點</span>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4">
-                        <div class="card_content">
+                        <div class="card_content" id="openLightbox">
                             <div class="card_img">
-                                <img src="./img/location_page/shaun-montero-house-unsplash.webp">
+                                <img src="./img/location_page/shaun-montero-house-unsplash.webp" alt="陽明山森林學校介紹照片_小張">
                             </div>
                             <div class="card_text">
                                 <span class="title">陽明山森林學校</span>
@@ -63,6 +63,36 @@
                                 <span class="actv_tag"></span>
                             </div>
                         </div> 
+                    </div>
+                    <div class="detail_box hidden" id="lightbox">
+                        <div class="box">
+                            <div class="pic">
+                                <img src="./img/location_page/yangming_house_lg.webp" alt="陽明山森林學校介紹照片_大張">
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    <span class="name">陽明山森林學校</span>
+                                    <span class="area">北部</span>
+                                </div>
+                                <span class="detail">坐落於台北市的自然寶地，搭乘公車便能遠離城市喧囂，沿途山景海拔的變化，每次都令人驚艷。</span>
+                                <div class="open-time">
+                                    <span class="time">開放時間 08:00-16:00 </span>
+                                    <span class="warning">*夏令時間可能會有所不同</span>
+                                </div>
+                                <span class="tel">02-0123-0000 </span>
+                                <div class="tag">
+                                    <span class="actv_tag">樹頂挑戰</span>
+                                    <span class="actv_tag">林間滑索</span>
+                                    <span class="actv_tag">高空探險</span>
+                                    <span class="actv_tag">體驗課程</span>
+                                    <span class="actv_tag">擎天漫遊</span>
+                                </div>
+                                <div class="more">
+                                    <a href="https://maps.app.goo.gl/h1DmqdtdxnumEwZ18" class="map">查看地圖</a>
+                                    <a href="./book_page.html" class="book-btn">馬上預約</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="card_content">
@@ -83,6 +113,36 @@
                             </div>
                         </div> 
                     </div>
+                    <div class="detail_box hidden" id="lightbox">
+                        <div class="box">
+                            <div class="pic">
+                                <img src="./img/location_page/yangming_house_lg.webp" alt="明池森林學校介紹照片_大張">
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    <span class="name">明池森林學校</span>
+                                    <span class="area">東部</span>
+                                </div>
+                                <span class="detail">坐落於台北市的自然寶地，搭乘公車便能遠離城市喧囂，沿途山景海拔的變化，每次都令人驚艷。</span>
+                                <div class="open-time">
+                                    <span class="time">開放時間 08:00-16:00 </span>
+                                    <span class="warning">*夏令時間可能會有所不同</span>
+                                </div>
+                                <span class="tel">02-0123-0000 </span>
+                                <div class="tag">
+                                    <span class="actv_tag">樹頂挑戰</span>
+                                    <span class="actv_tag">林間滑索</span>
+                                    <span class="actv_tag">高空探險</span>
+                                    <span class="actv_tag">體驗課程</span>
+                                    <span class="actv_tag">神木漫遊</span>
+                                </div>
+                                <div class="more">
+                                    <a href="https://maps.app.goo.gl/h1DmqdtdxnumEwZ18" class="map">查看地圖</a>
+                                    <a href="./book_page.html" class="book-btn">馬上預約</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-12 col-md-4">
                         <div class="card_content">
                             <div class="card_img">
@@ -102,7 +162,37 @@
                                 <span class="actv_tag"></span>
                             </div>
                         </div> 
-                    </div>                 
+                    </div>
+                    <div class="detail_box hidden" id="lightbox">
+                        <div class="box">
+                            <div class="pic">
+                                <img src="./img/location_page/yangming_house_lg.webp" alt="棲蘭森林學校介紹照片_大張">
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    <span class="name">棲蘭森林學校</span>
+                                    <span class="area">東部</span>
+                                </div>
+                                <span class="detail">坐落於台北市的自然寶地，搭乘公車便能遠離城市喧囂，沿途山景海拔的變化，每次都令人驚艷。</span>
+                                <div class="open-time">
+                                    <span class="time">開放時間 08:00-16:00 </span>
+                                    <span class="warning">*夏令時間可能會有所不同</span>
+                                </div>
+                                <span class="tel">02-0123-0000 </span>
+                                <div class="tag">
+                                    <span class="actv_tag">林間滑索</span>
+                                    <span class="actv_tag">高空探險</span>
+                                    <span class="actv_tag">體驗課程</span>
+                                    <span class="actv_tag">神木漫遊</span>
+                                    <span class="actv_tag">神木縱走</span>
+                                </div>
+                                <div class="more">
+                                    <a href="https://maps.app.goo.gl/h1DmqdtdxnumEwZ18" class="map">查看地圖</a>
+                                    <a href="./book_page.html" class="book-btn">馬上預約</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>             
                     <div class="col-12 col-md-4">
                         <div class="card_content">
                             <div class="card_img">
@@ -119,6 +209,35 @@
                                 <span class="actv_tag">體驗課程</span>
                             </div>
                         </div> 
+                    </div>
+                    <div class="detail_box hidden" id="lightbox">
+                        <div class="box">
+                            <div class="pic">
+                                <img src="./img/location_page/yangming_house_lg.webp" alt="南投森林學校介紹照片_大張">
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    <span class="name">南投森林學校</span>
+                                    <span class="area">中部</span>
+                                </div>
+                                <span class="detail">坐落於台北市的自然寶地，搭乘公車便能遠離城市喧囂，沿途山景海拔的變化，每次都令人驚艷。</span>
+                                <div class="open-time">
+                                    <span class="time">開放時間 08:00-16:00 </span>
+                                    <span class="warning">*夏令時間可能會有所不同</span>
+                                </div>
+                                <span class="tel">02-0123-0000 </span>
+                                <div class="tag">
+                                    <span class="actv_tag">樹頂挑戰</span>
+                                    <span class="actv_tag">林間滑索</span>
+                                    <span class="actv_tag">高空探險</span>
+                                    <span class="actv_tag">體驗課程</span>
+                                </div>
+                                <div class="more">
+                                    <a href="https://maps.app.goo.gl/h1DmqdtdxnumEwZ18" class="map">查看地圖</a>
+                                    <a href="./book_page.html" class="book-btn">馬上預約</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>                 
                     <div class="col-12 col-md-4">
                         <div class="card_content">
@@ -136,11 +255,40 @@
                                 <span class="actv_tag">體驗課程</span>
                             </div>
                         </div> 
-                    </div>                 
+                    </div>
+                    <div class="detail_box hidden" id="lightbox">
+                        <div class="box">
+                            <div class="pic">
+                                <img src="./img/location_page/yangming_house_lg.webp" alt="高雄六龜森林學校介紹照片_大張">
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    <span class="name">高雄六龜森林學校</span>
+                                    <span class="area">南部</span>
+                                </div>
+                                <span class="detail">坐落於台北市的自然寶地，搭乘公車便能遠離城市喧囂，沿途山景海拔的變化，每次都令人驚艷。</span>
+                                <div class="open-time">
+                                    <span class="time">開放時間 08:00-16:00 </span>
+                                    <span class="warning">*夏令時間可能會有所不同</span>
+                                </div>
+                                <span class="tel">02-0123-0000 </span>
+                                <div class="tag">
+                                    <span class="actv_tag">樹頂挑戰</span>
+                                    <span class="actv_tag">林間滑索</span>
+                                    <span class="actv_tag">高空探險</span>
+                                    <span class="actv_tag">體驗課程</span>
+
+                                </div>
+                                <div class="more">
+                                    <a href="https://maps.app.goo.gl/h1DmqdtdxnumEwZ18" class="map">查看地圖</a>
+                                    <a href="./book_page.html" class="book-btn">馬上預約</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
                 </div>
             </div>
-        </div>
-        
+        </div> 
     </section>
     <footer>
         <div class="footer_container">
@@ -202,5 +350,6 @@
             <a href="#top"></a>
         </div>
     </footer>
+    <script src="./js/show_box.js"></script>
 </body>
 </html>

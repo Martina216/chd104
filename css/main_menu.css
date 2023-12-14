@@ -48,7 +48,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #fa0;
+        background-color: #fff;
         transition: all 0.3s ease;
         height: 100%;
         display: none;
@@ -64,7 +64,7 @@
     }
     .header_inner .header_main_nav .header_nav li a{
         text-decoration: none;
-        color: #fff;
+        color: var(--dark-green);
         font-size: 30px;
         padding: 0 40px;
         opacity: 0;
