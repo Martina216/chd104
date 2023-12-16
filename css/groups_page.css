@@ -1,7 +1,3 @@
-img{
-    width: 100%;
-    vertical-align: middle;
-}
 [class*="col-md-"]{
     justify-content: center;
 }
@@ -14,33 +10,112 @@ img{
     line-height: 1.3;
     padding: 0px 0px 30px;
 }
-.groups-content .groups_title{
-    padding: 20px 0px 24px;
-    border-bottom: 1px solid #bbb;
-    height: 100px;
-}
-.groups-content .groups_title span{
-    font-size: 26px;
-}
 .groups-content .groups_menu{
-    max-width: 600px;
-    margin: 0px auto 60px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-self: center;
 }
 .groups-content .groups_menu a{
     display: flex;
-    width: 125px;
-    height: 42px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     border-radius: 20px;
-    background-color: #A7C398;
-    color: #000;
+    background-color: var(--nude-green);
+    color: var(--black);
     font-size: 18px;
+}
+.party .party_img{
+    border-radius: 40px;
+    overflow: hidden;
+    max-width: 820px;
+    position: relative;
+    width: 100%;
+}
+.groups_category{
+    max-width: 1200px;
+    margin:auto;
+    padding: 60px 0px;
+    width: 100%;
+}
+@media (width<=768px) {
+    .groups-content .groups_title{
+        padding: 20px 20px 24px;
+        font-size: 40px;
+        color: #aaa;
+    }
+    .groups-content .groups_menu{
+        margin: 0px auto -20px;
+        gap: 20px;
+    }
+    .groups-content .groups_menu a{
+        width: 100px;
+        height: 40px;
+    }
+
+    .party .party_img{
+        height: 300px;
+    }
+    .party .party_img img{
+        object-fit:cover;
+        height: 100%;
+    }
+    .groups_category .first .row .card{
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+    .groups_category .container .row .card .ts_lg-img{
+        width: 100%;
+        /* height: 400px; */
+        overflow: hidden;
+        border-radius: 40px;
+    }
+    .groups_category .container .row .card .ts_s-img{
+        width: 100%;
+        overflow: hidden;
+        border-radius: 40px;
+    }
+    .groups_category{
+        padding: 30px 0px;
+    }
+}
+@media (width>768px) {
+    .groups-content .groups_title{
+        padding: 20px 0px 24px;
+        height: 100px;
+        font-size: 26px;
+    }
+    .groups-content .groups_menu{
+        max-width: 600px;
+        margin: 0px auto 60px;
+        justify-content: space-evenly;
+    }
+    .groups-content .groups_menu a{
+        width: 125px;
+        height: 42px;
+    }
+    .groups_category .first .row .card{
+        margin: 0px auto;
+        display: flex;
+        gap: 20px;
+    }
+    .groups_category .container .row .card .ts_lg-img{
+        width: 500px;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 40px;
+    }
+    .groups_category .container .row .card .ts_s-img{
+        width: 300px;
+        overflow: hidden;
+        border-radius: 40px;
+    }
+    .groups_category{
+        padding: 60px 0px;
+    }
 }
 .groups-content .groups_container{
     width: 100%;
@@ -110,11 +185,7 @@ img{
     transition: all .25s ease-in;
 }
 /* ----------------------------------------------------- */
-.groups_category{
-    max-width: 1200px;
-    margin:auto;
-    padding: 60px 0px;
-}
+
 .party{
     position: relative;
 }
@@ -124,8 +195,6 @@ img{
     bottom: 10%;
     left: 6%;
     z-index: 2;
-}
-.party .party_title span{
     font-size: 32px;
     display: flex;
     align-items:center ;
@@ -136,12 +205,7 @@ img{
     color:  #cfcfcf;
     padding: 0 10px;
 }
-.party .party_img{
-    border-radius: 40px;
-    overflow: hidden;
-    width: 820px;
-    position: relative;
-}
+
 .party .party_img::after {
     content: '';
     position: absolute;
@@ -169,25 +233,9 @@ img{
     transition: all .25s ease-in;
 }
 /* ---------------------------------------------------------- */
-.groups_category .first .row .card{
-    margin: 0px auto;
-    display: flex;
-    gap: 20px;
-}
 .groups_category .second .row .card{
     display: flex;
     flex-direction: column;
-}
-.groups_category .container .row .card .ts_lg-img{
-    width: 500px;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 40px;
-}
-.groups_category .container .row .card .ts_s-img{
-    width: 300px;
-    overflow: hidden;
-    border-radius: 40px;
 }
 .col-md-9{
     flex-direction: column;
