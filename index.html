@@ -158,15 +158,13 @@
             </div>
 
             <div class="map_menu-desk">
-                <a href="">陽明山</a>
-                <a href="">明池</a>
-                <a href="">棲蘭</a>
-                <a href="">南投</a>
-                <a href="">高雄六龜</a>
+                <div class="btn" id="ToYangMin">陽明山</div>
+                <div class="btn" id="ToMingChi">明池</div>
+                <div class="btn" id="ToChiLan">棲蘭</div>
+                <div class="btn" id="ToNanToi">南投</div>
+                <div class="btn" id="ToKaou">高雄六龜</div>
             </div>
-            <div class="map_container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.249035944548!2d121.22244777705498!3d24.957640341358996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1700832120420!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <div class="map_container" id="map">
             </div>
         </section>
 
@@ -191,8 +189,10 @@
                                                 <span>2張孩童票</span>
                                             </div>
                                             <i class="fa-solid fa-circle-arrow-right"></i>
+                                            <a href="./book_page.html"></a>
                                         </div>
                                     </div>
+                                    
                                     <div class="border"  title="需出示相關證件">
                                         <div class="text">
                                             <div class="p">
@@ -209,7 +209,9 @@
                                             </div>
                                             <span class="comment"></span>
                                             <i class="fa-solid fa-circle-arrow-right"></i>
+                                            <a href="./book_page.html"></a>
                                         </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-md-9">
@@ -604,6 +606,8 @@
     <script src="./js/banner_scroll.js"></script>
     <script src="./js/text_show.js"></script>
     <script src="./js/show_map.js"></script>
+    <script src="./js/mapAPI.js"></script>
+ 
     
 </body>
 </html>
