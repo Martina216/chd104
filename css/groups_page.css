@@ -49,13 +49,10 @@ img{
     justify-content: center;
 }
 #fam{
-    flex-wrap: nowrap;
     width: 100%;
     height: 250px;
     overflow-x: auto;
     overflow-y: hidden;
-    /* cursor: move; */
-    cursor: url('../img/right-long-solid_zoom.svg'),auto;
 }
 #fam .family{
     width: 1200px;
