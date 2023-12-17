@@ -18,6 +18,13 @@
     width: 25px;
     position: relative;
 }
+.footer_information .footer_dictionary a{
+    border-bottom: .1px solid #00000000;
+    color: #fff;
+}
+.footer_information .footer_dictionary a:hover{
+    border-bottom: .1px solid #fff;
+}
 @media (width>=0px) {
     .footer_information .footer_dictionary ul{
         height: 130px;
@@ -60,7 +67,6 @@
         height: 160px;
         gap: 1rem;
     }
-    .footer_container .footer_information .footer_dictionary a{color: #fff;}
     .footer_container .footer_information .footer_logo-area{
         order: -2;
         display: flex;
@@ -152,10 +158,6 @@
     }
     .footer_information .footer_dictionary li:first-child, .footer_dictionary li:nth-child(6){
         padding: 0px 0px 5px;
-    }
-    .footer_information .footer_dictionary a{
-        text-decoration: none;
-        color: #fff;
     }
     .footer_information .footer_logo-area{
         display: flex;

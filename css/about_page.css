@@ -1,22 +1,33 @@
-img{
-    width: 100%;
-    vertical-align: middle;
-}
 /* ------------------------------------------------ */
 .about_content{
-    color:#35311E;
-    max-width: 1280px;
+    color:var(--black);
+    /* max-width: 1280px; */
+    /* width: 100vw; */
     margin: auto;
 }
 .about_content .about_banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    flex-grow: 1;
-    margin: auto;
+    width: 100vw;
     position: relative;
 }
+.about_content .about_banner .banner_img{
+    height: 100vh;
+}
+.about_content .about_banner .banner_img img{
+    height: 100%;
+    object-fit:cover;
+}
+@media (width<=768px) {
+    .about_content .about_banner .banner_img{
+        height: 100vh;
+        position: relative;
+    }
+    .about_content .about_banner .banner_img img{
+        height: 100%;
+        object-fit:cover;
+    }
+    
+}
+
 .about_content .about_banner .banner_title{
     text-align: center;
     padding: 50px 0;
