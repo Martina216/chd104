@@ -16,3 +16,5 @@ function fadeInTexts() {
 }
 
 window.onload = fadeInTexts;
+
+

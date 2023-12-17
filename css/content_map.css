@@ -49,9 +49,8 @@
         min-width: 300px;
         border-radius: 0 0 .8em .8em;
     }
-    .content_map .map_menu-phone .dropdown-content a{
+    .content_map .map_menu-phone .dropdown-content div{
         color: #4F7937;
-        /* padding: 12px 16px; */
         text-decoration: none;
         display: block;
         margin: 15px auto;
@@ -64,8 +63,7 @@
         transition: all .3s ease;}
     .content_map .map_menu-phone .dropbtn .rotate{
         rotate: 180deg;
-        transition: all .5s ease;
-    }
+        transition: all .5s ease;}
     .content_map .map_menu-desk{
         display: none;
     }
@@ -87,10 +85,7 @@
             height: 50vh;
             padding: 50px 0 0;
         }
-        
     }
-
-
     .content_map .map_menu-desk{
         max-width:750px;
         margin: 0px auto 30px;
