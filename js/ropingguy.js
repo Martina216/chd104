@@ -1,10 +1,13 @@
 /*hiuuuuuuuuuu*/
 function handleScroll() {
+    if (window.innerWidth < 768) {
+        return;
+    }
+
     var scrollPosition = window.scrollY; 
-
     var viewportHeight = window.innerHeight * 0.5;
-
     var ropingElement = document.querySelector('.roping');
+
     if (scrollPosition > viewportHeight) {
         ropingElement.classList.add('active'); 
 

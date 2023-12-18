@@ -51,7 +51,8 @@ days.forEach(day => {
             if (selectedDate) {
                 const cartItem = document.createElement('div');
                 const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
-                cartItem.textContent = selectedDate.toLocaleDateString('zh-tw', options);
+                const dateString = selectedDate.toLocaleDateString('zh-tw', options);
+                cartItem.textContent = `您的預定時間為： ${dateString}`;
         
                 const shoppingCart = document.getElementById('cartContent');
                 shoppingCart.appendChild(cartItem);
@@ -59,6 +60,7 @@ days.forEach(day => {
                 addToCartBtn.disabled = true;
             }
         });
+        
         
     });
 });
