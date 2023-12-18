@@ -328,7 +328,26 @@ function initMap(){
         map.setZoom(11); 
     });
 
+    document.getElementById('MingChi').addEventListener('click', function() {
+        /*切換*/        
+        var newLocation = {lat: 24.651070250430898, lng: 121.47147114453871};
+
+        /*地圖中心到新位置*/ 
+        map.setCenter(newLocation);
+
+        /*Marker到新位置*/
+        marker.setPosition(newLocation);
+
+        /*地圖維持zoom:12 */
+        map.setZoom(11); 
+    });
+
     document.getElementById('ToYangMin').addEventListener('click', function() {
+        map.setCenter(initialLocation);
+        marker.setPosition(initialLocation);
+        map.setZoom(11);
+    });
+    document.getElementById('YangMin').addEventListener('click', function() {
         map.setCenter(initialLocation);
         marker.setPosition(initialLocation);
         map.setZoom(11);
@@ -342,7 +361,21 @@ function initMap(){
         map.setZoom(11); 
     });
 
+    document.getElementById('ChiLan').addEventListener('click', function() {
+        var newLocation = {lat: 24.582094365110954, lng: 121.49118834467622};
+        map.setCenter(newLocation);
+        marker.setPosition(newLocation);
+        map.setZoom(11); 
+    });
+
     document.getElementById('ToNanToi').addEventListener('click', function() {
+        var newLocation = {lat: 23.851835521050248,lng: 120.9470114833781};
+        map.setCenter(newLocation);
+        marker.setPosition(newLocation);
+        map.setZoom(11); 
+    });
+
+    document.getElementById('NanToi').addEventListener('click', function() {
         var newLocation = {lat: 23.851835521050248,lng: 120.9470114833781};
         map.setCenter(newLocation);
         marker.setPosition(newLocation);
@@ -355,6 +388,11 @@ function initMap(){
         marker.setPosition(newLocation);
         map.setZoom(11); 
     });
+
+    document.getElementById('Kaou').addEventListener('click', function() {               
+        var newLocation = {lat: 23.002646412688645, lng: 120.65469575907538};
+        map.setCenter(newLocation);
+        marker.setPosition(newLocation);
+        map.setZoom(11); 
+    });
 }
-
-

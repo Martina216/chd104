@@ -105,15 +105,19 @@
 }
 @media (width>768px) {
     header{
-        max-width: 1920px;
+        width: 100vw;
         margin: auto;
+        background-color: #fff;
+        box-shadow: 2px 2px 10px 3px #dddddd;
     }
     .header_inner{
+        max-width: 1920px;
         width: 100%;
         margin:auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        background-color: #fff;
     }
     .header_inner .header_logo{
         max-width: 333px;

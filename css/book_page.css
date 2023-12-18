@@ -1,28 +1,248 @@
-img{
-    width: 100%;
-    vertical-align: middle;
+body{
+    background-color: #FFFCF3;
 }
-.book-content{
+@media (width<=786px) {
+    .book-content{
+        max-width: 768px;
+        margin: auto;
+        color: var(--dark-green);
+        padding: 100px 0px 30px;
+    }
+}
+
+@media (width>786px) {
+    .book-content{
+        max-width: 1200px;
+        margin: auto;
+        color: var(--dark-green);
+        padding: 100px 0px 30px;
+    }
+}
+/* -------------------------------------------------------- */
+.choose{
     max-width: 1200px;
-    margin: auto;
-    color: #4F7937;
-    line-height: 1.3;
-    padding: 100px 0px 30px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    margin: auto auto auto 80px;
 }
-.book-content .book_text{
+.choose .title{
+    font-size: 26px;
+    background-color: var(--light-green);
+    color:var(--black);
+    display: inline;
+}
+.book-content .choose .container{
+    background-color: var(--light-green);
+    max-width: 800px;
+    width: 50%;
+    padding: 2% 2%;
+    cursor: default;
+    margin: 40px auto 40px 30px;
+}
+.book-content .choose .container .btns{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     margin: auto;
-    padding: 20px 0px 24px;
-    text-align: center;
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+}
+.choose .container button{
+    display: block;
+    width: 100px;
+    margin: 5px auto;
+    
+    border: 1.5px solid #00000000;
+    color: var(--dark-green);
+    padding: .5em 13px;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: #eee;
+    
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    outline: none;
+    
+    transition: all .15s ease-in;
+}
+.choose .container button:hover{
+    cursor: pointer;
+    border: 1.5px solid var(--dark-green);
+    background-color: #fff;
+}
+
+.choose .container .selected {
+    border: 1.5px solid var(--dark-green);
+    /* border: 1px solid #00000000; */
+    background-color: #fff;
+    border-radius: 30px;
+}
+@media (width<=768px) {
+    .choose .container #selectedData span{
+        font-size: 18px;
+    }
+}
+@media (width>768px) {
+    .choose .container #selectedData span, #selectedTime span{
+        font-size: 26px;
+    }
+}
+
+.choose .container .btns .actv{
+    display: block;
+    width: 100px;
+}
+.choose .container .price_content{
+    box-sizing: border-box;
+    padding: 10px 50px;
+}
+.choose .container .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.choose .container .category{
+    position: relative;
+}
+.choose .container .category span:first-of-type{
     font-size: 24px;
 }
-.book-content .book_text span:first-child{
-    font-size: 80px;
-    font-style: italic;
+.choose .container .category .price{
+    font-size: 20px;
 }
-.book-content .book_img{
-    order: -1;
-    width: 300px;
+.choose .container .number{
+    color: #788e6d;
+    margin-left: auto;
+    padding: 0 50px;
+    font-size: 30px;
+
+}
+.choose .container .info{}
+.price_content .box .info .detail {
+    padding: 10px;
+    /* background-color: #fa0; */
+}
+.choose .container .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.choose .container .number i{
+    transition: all .15s ease-in;
+    cursor: pointer;
+}
+.choose .container .number i:hover{
+    color: var(--dark-green);
+    
+}
+.choose .container .number input{
+    display: inline-block;
+    background-color: #fff;
+    width: 1.2em;
+    border: none; 
+    padding: 0 0.5rem; 
+    font-size: 20px;
+}
+.choose .container .box{
+    display: flex;
+}
+
+.comment::before {
+    content: "?";
+    color: var(--black);
+}
+.comment{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .5px solid var(--black);
+    font-size: 12px;
+    position: absolute;
+    top: 10%;
+    left: 110%;
+}
+
+
+/* ---------------------------------------------------------------- */
+.calendar {
+    border: 1px solid #ccc;
+    padding: 10px;
     margin: auto;
+}
+
+.calendar .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.calendar .header i {
+    font-size: 25px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.calendar .weekdays {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    width: 100%;
+    margin: 10px auto;
+} 
+.calendar .weekdays div {
+    width: 10%;
+    text-align: center;
 }  
+.calendar .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 100%;
+}
+
+.calendar .days div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+.calendar .days div:hover{
+    background-color: var(--dark-green);
+    color: #fff;
+    
+}
+.calendar .days .select{
+    background-color: var(--dark-green);
+    color: #fff;
+}
+
+.past-day{
+    background-color: #ccc;
+    color: #aaa;
+}
+#cartBtn{
+    display: none;
+    margin-top: 30px;
+}
+/* ----------------------------------------------------------- */
+.cart{
+    display: none;
+}
+.cart .title{
+    font-size: 28px;
+}

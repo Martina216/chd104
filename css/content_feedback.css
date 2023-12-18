@@ -3,6 +3,7 @@
     padding: 0px 0px 200px 0px;
     color: #35311E;
     max-width: 1200px;
+    margin: auto;
 }
 
 @media (width<=768px) {
@@ -12,9 +13,12 @@
     }
     .content_feedback .feedback_container{
         display: flex;
-        /* gap: 20px; */
         overflow-x: auto;
         height: 400px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 0 50px 0 0;
+
     }
     .content_feedback .feedback_container .feedback_box{
         flex: 0 0  auto;
@@ -23,20 +27,24 @@
         overflow: hidden;
         width: 280px;
         border-radius: 35px 35px 0px 35px;
-        margin: 0px 7px;
+        margin: 0px 15px;
+        scroll-snap-align: center; 
+    }
+    .content_feedback .feedback_container .feedback_box:first-of-type{
+        margin-left: 50px;
     }
 }
 
 
 @media (width>768px) {
     /*輪播*/
-    
 
     .content_feedback .feedback_container{
         display: flex;
         gap: 20px;
         overflow-x: auto;
         height: 400px;
+        
     }
     .content_feedback .feedback_container .feedback_box{
         flex: 0 0  auto;
