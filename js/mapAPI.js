@@ -304,9 +304,6 @@ function initMap(){
     disableDefaultUI: true,
     });
 
-
-
-
     /*marker初始地點*/
     var marker = new google.maps.Marker({
         position: initialLocation,
