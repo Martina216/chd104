@@ -1,13 +1,14 @@
 @media (width<=768px) {
     .content_price .price_container{display: none;}
     .price_container-phone .price_area{
-        background-color: rgb(255 , 255 , 255, .65);
+        /* background-color: rgb(255 , 255 , 255, .65);
         border-radius: 40px;
         box-shadow: 1px 1px 50px 10px #00000020;
         padding: 25px 0px;
-        margin: auto;
+        margin: auto; */
+        display: none;
     }
-    .price_container-phone .price_area .border{
+    /* .price_container-phone .price_area .border{
         border: 2px solid #ECFBCA;
         border-radius: 1rem;
         
@@ -29,7 +30,7 @@
         order: -2;
         align-self: center;
         
-    }
+    } */
 
 }
 @media (width>768px) {
