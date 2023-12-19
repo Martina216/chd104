@@ -6,7 +6,55 @@ body{
         max-width: 768px;
         margin: auto;
         color: var(--dark-green);
-        padding: 100px 0px 30px;
+        padding: 50px 0px 30px;
+    }
+    .choose{
+        max-width: 768px;
+    }
+    .choose .title{
+        font-size: 22px;
+        background-color: var(--light-green);
+        color:var(--black);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+    }
+    .book-content .choose .container{
+        background-color: var(--light-green);
+        max-width: 800px;
+        padding: 2% 2%;
+        cursor: default;
+        margin: 20px auto;
+    }
+    .book-content .choose .container .btns{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .choose .container .price_content{
+        padding: 10px 5px;
+    }
+    .choose .container #selectedData span{
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .choose .container .number{
+        display: flex;
+        flex-wrap: wrap;
+        color: #788e6d;
+        margin-left: auto;
+        font-size: 30px;
+    }
+    .calendar {
+        border: 1px solid #fff;
+        padding: 10px;
+        margin: 5px;
+
+    }
+    .cart .title{
+        font-size: 22px;
     }
 }
 
@@ -17,37 +65,66 @@ body{
         color: var(--dark-green);
         padding: 100px 0px 30px;
     }
+
+    .choose{
+        max-width: 1200px;
+        margin: auto auto auto 80px;
+    }
+    .choose .title{
+        font-size: 26px;
+        background-color: var(--light-green);
+        color:var(--black);
+        display: inline;
+    }
+    .book-content .choose .container{
+        background-color: var(--light-green);
+        max-width: 700px;
+        width: 100%;
+        padding: 2% 2%;
+        cursor: default;
+        margin: 40px auto 40px 30px;
+    }
+    .book-content .choose .container .btns{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+        column-gap: 20px;
+    }
+    .choose .container #selectedData span, #selectedTime span{
+        font-size: 26px;
+    }
+    .choose .container .price_content{
+        box-sizing: border-box;
+        padding: 10px 50px;
+    }
+    .choose .container .number{
+        color: #788e6d;
+        margin-left: auto;
+        padding: 0 50px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .calendar {
+        border: 1px solid #fff;
+        padding: 10px;
+        margin: auto;
+    }
+    .cart .title{
+        font-size: 28px;
+    }
 }
 /* -------------------------------------------------------- */
-.choose{
-    max-width: 1200px;
-    width: 100%;
-    margin: auto auto auto 80px;
-}
-.choose .title{
-    font-size: 26px;
-    background-color: var(--light-green);
-    color:var(--black);
-    display: inline;
-}
-.book-content .choose .container{
-    background-color: var(--light-green);
-    max-width: 800px;
-    width: 100%;
-    padding: 2% 2%;
-    cursor: default;
-    margin: 40px auto 40px 30px;
-}
-.book-content .choose .container .btns{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center;
-    align-content: center;
-    column-gap: 20px;
-}
+
+
+
+
 .choose .container button{
     display: block;
     width: 110px;
@@ -81,25 +158,11 @@ body{
     background-color: #fff;
     border-radius: 30px;
 }
-@media (width<=768px) {
-    .choose .container #selectedData span{
-        font-size: 18px;
-    }
-}
-@media (width>768px) {
-    .choose .container #selectedData span, #selectedTime span{
-        font-size: 26px;
-    }
-}
-
 .choose .container .btns .actv{
     display: block;
     width: 110px;
 }
-.choose .container .price_content{
-    box-sizing: border-box;
-    padding: 10px 50px;
-}
+
 .choose .container .box{
     display: flex;
     justify-content: space-between;
@@ -115,24 +178,12 @@ body{
 .choose .container .category .price{
     font-size: 20px;
 }
-.choose .container .number{
-    color: #788e6d;
-    margin-left: auto;
-    padding: 0 50px;
-    font-size: 30px;
 
-}
 .choose .container .info{}
 .price_content .box .info .detail {
     padding: 10px;
-    /* background-color: #fa0; */
 }
-.choose .container .number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
+
 .choose .container .number i{
     transition: all .15s ease-in;
     cursor: pointer;
@@ -173,12 +224,6 @@ body{
 
 
 /* ---------------------------------------------------------------- */
-.calendar {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: auto;
-}
-
 .calendar .header {
     display: flex;
     align-items: center;
@@ -241,7 +286,4 @@ body{
 /* ----------------------------------------------------------- */
 .cart{
     display: none;
-}
-.cart .title{
-    font-size: 28px;
 }
