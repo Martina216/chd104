@@ -1,12 +1,12 @@
 @media (width<=768px) {
     .content_price .price_container{display: none;}
     .price_container-phone .price_area{
+        display: none;
         /* background-color: rgb(255 , 255 , 255, .65);
         border-radius: 40px;
         box-shadow: 1px 1px 50px 10px #00000020;
         padding: 25px 0px;
         margin: auto; */
-        display: none;
     }
     /* .price_container-phone .price_area .border{
         border: 2px solid #ECFBCA;
